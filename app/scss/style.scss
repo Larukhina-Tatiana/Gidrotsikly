@@ -1,0 +1,32 @@
+@use 'sass:math';
+
+
+@import "./utils/modern-normalize.min";
+@import "./utils/_fonts";
+@import "./utils/_vars";
+@import "./utils/_global";
+@import "./utils/_container";
+
+@import "./components/_header";
+// @import "./components/_about";
+// @import "./components/_subtitle";
+// @import "./components/_expertise";
+// @import "./components/_vision";
+// @import "./components/_portfolio";
+// @import "./components/_tabs-buttons";
+// @import "./components/_content-info";
+// @import "./components/_slider";
+// @import "./components/_slick-dots";
+// @import "./components/_video";
+// @import "./components/_team";
+// @import "./components/_pricing";
+// @import "./components/_contact";
+// @import "./components/_clients";
+// @import "./components/_footer";
+
+// <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
+//                     <use href="./images/projects/icons.svg#icon-search"></use>
+//                   </svg>
+
+// @include transition ($transition-property: color);
+  // @media screen and (width < 1034px ) {}

@@ -1,0 +1,153 @@
+// 300
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Light.woff2) format('woff2'), url(../fonts/Barlow-Light.woff) format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+%Barlow-300 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+// 400
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Regular.woff2) format('woff2'), url(../fonts/Barlows-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%Barlow-400 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-Regular.woff2) format('woff2'), url(../fonts/SFProDisplays-Regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%SFProDisplay-400 {
+    font-family: 'SFProDisplay', sans-serif;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'proximanova';
+    src: url(../fonts/proximanova-regular.woff2) format('woff2'), url(../fonts/proximanovas-regular.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+%proximanova-400 {
+    font-family: 'proximanova', sans-serif;
+    font-weight: 400;
+}
+
+
+// 500 -Medium
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-regular.woff2) format('woff2'), url(../fonts/SFProDisplays-regular.woff) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+%SFProDisplay-500 {
+    font-family: 'SFProDisplay', sans-serif;
+    font-weight: 500;
+}
+
+
+// 600 SemiBold
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-SemiBold.woff2) format('woff2'), url(../fonts/Barlow-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%Barlow-600 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: 'SFProDisplay';
+    src: url(../fonts/SFProDisplay-SemiBold.woff2) format('woff2'), url(../fonts/SFProDisplay-SemiBold.woff) format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+%SFProDisplay-600 {
+    font-family: 'SFProDisplay', sans-serif;
+    font-weight: 600;
+}
+
+// 700
+@font-face {
+    font-family: 'Barlow';
+    src: url(../fonts/Barlow-Bold.woff2) format('woff2'), url(../fonts/Barlow-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%Barlow-700 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'proximanova';
+    src: url(../fonts/proximanova-Bold.woff2) format('woff2'), url(../fonts/proximanova-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+%proximanova-700 {
+    font-family: 'proximanova', sans-serif;
+    font-weight: 700;
+
+}
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Bold.woff2) format('woff2'), url(../fonts/OpenSans-Bold.woff) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+%OpenSans-700 {
+    font-family: 'OpenSans', sans-serif;
+    font-weight: 700;
+}
+
+// @font-face {
+//     font-family: 'icons';
+//     font-display: swap;
+//     src: url(../fonts/icons.woff2) format('woff2'), url(../fonts/icons.woff) format('woff');
+//     font-weight: 400;
+//     font-style: normal;
+// font-display: swap;
+// }
+// @extend %Montserrat-600;
