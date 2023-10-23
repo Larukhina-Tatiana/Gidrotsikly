@@ -1,0 +1,11 @@
+.hero {
+
+
+  &__slider-title {
+    color: var(--main-text);
+      text-align: center;
+      font-size: rem(50);
+      font-weight: 700;
+      line-height: 1;
+  }
+}
