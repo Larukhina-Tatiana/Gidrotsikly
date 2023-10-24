@@ -80,32 +80,11 @@ body {
     font-weight: 400;
     font-size: rem(20);
     line-height: calc(24/20);
-    color: var(--text);
+    color: var(--main-text);
     overflow-x: hidden;
     min-width: 100vw;
 
 
-    // @media screen and (width > 999px) {
-    //     font-size: .875rem;
-    //     line-height: calc(16/14);
-    // }
-
-
-
-    // }
-    // @media screen and (width < 769px) {
-    //     line-height: calc(15/10);
-    // }
-    // @media screen and (width > 1000px) {
-
-
-
-
-    // @media screen and (width > 480px) {
-    // font-size: .5rem;
-    // line-height: calc(12/8);
-    //     line-height: calc(11/10);
-    // }
 }
 
 button {
@@ -169,6 +148,17 @@ button,
 //   background-repeat: no-repeat;
 // }
 // }
+
+// <picture > <source srcset="
+//  ./images/portfolio/d-project-9@1x.webp 343w,
+// ./images/portfolio/d-project-9@2x.webp 686w,
+// ./images/portfolio/d-project-9@3x.webp 10296w"
+//  type="image/webp" media="(min-width: 1200px)" sizes="(min-width: 1200px) 343px" > <source srcset="
+//  ./images/portfolio/d-project-9@1x.jpg 343w,
+// ./images/portfolio/d-project-9@2x.jpg 686w,
+// ./images/portfolio/d-project-9@3x.jpg 10296w " media="(min-width: 1200px)"
+//  sizes="(min-width: 1200px) 343px" > <img class="portfolio__card-img" src="./images/portfolio/d-project-9@1x.jpg" alt="images"
+// width="343" height="572" > </picture >
 
 .visually-hidden {
     position: absolute;

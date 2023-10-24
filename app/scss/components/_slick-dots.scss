@@ -1,0 +1,36 @@
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(9);
+
+  & button {
+    font-size: 0;
+    width: rem(11);
+    height: rem(11);
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+  }
+
+  // @media screen and (width < 551px) {
+  //   gap: 20px;
+  // }
+
+  // @media screen and (width < 376px) {
+  //   gap: 5px;
+
+  //   & button {
+  //     width: 4px;
+  //     height: 4px;
+  //   }
+  // }
+}
+
+.slick-active button {
+  background-color: var(--white);
+}

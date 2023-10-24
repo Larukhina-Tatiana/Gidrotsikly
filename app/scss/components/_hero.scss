@@ -1,11 +1,35 @@
 .hero {
+  @include adaptivevalue(padding-top, 80, 25, 1200, 320, 1);
 
 
-  &__slider-title {
-    color: var(--main-text);
-      text-align: center;
-      font-size: rem(50);
-      font-weight: 700;
-      line-height: 1;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    max-width: rem(870);
+    position: relative;
+    &-svg {
+      color: var(--white);
+    }
+
+    &-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+
+      &-next {
+        right: rem(20);
+      }
+      &-prev {
+        left: rem(20);
+      }
+
+      @include transition ($transition-property: color);
+      @media (any-hover: hover) {&:hover{color: var(--accent)}}
+    }
   }
 }

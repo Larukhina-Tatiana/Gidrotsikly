@@ -78,23 +78,28 @@ function scripts() {
 function images() {
   // return src(["app/images/**/*.*", "!app/images/**/*.svg"])
   return (
-    src([
-      "app/images/src/*.*",
-      "!app/images/src/*.svg"
-    ])
+    src(["app/images/src/*.*", "!app/images/src/*.svg"])
       // .pipe(newer("app/images"))
       // .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
-      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(src(["app/images/src/*.*"]))
       .pipe(newer("app/images"))
       .pipe(webp())
 
-      .pipe(src(["app/images/src/*.*", "app/images/src/about/*.*"]))
+      .pipe(src(["app/images/src/content/*.*"]))
+      .pipe(newer("app/images/content"))
+      .pipe(webp())
+
+      .pipe(src(["app/images/src/*.*"]))
       .pipe(newer("app/images"))
       .pipe(imagemin())
 
-      .pipe(dest("app/images"))
+      .pipe(src(["app/images/src/content/*.*"]))
+      .pipe(newer("app/images/content"))
+      .pipe(imagemin())
+
+      .pipe(dest("app/images/content"))
   );
 }
 

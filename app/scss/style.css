@@ -261,7 +261,7 @@ body {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.2;
-  color: var(--text);
+  color: var(--main-text);
   overflow-x: hidden;
   min-width: 100vw;
 }
@@ -312,7 +312,6 @@ button,
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid brown;
 }
 
 .header__top {
@@ -415,26 +414,93 @@ button,
   position: relative;
 }
 .header__bottom-menu-link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   padding: 0.9375rem 0 0.875rem;
-  border-bottom: 3px solid transparent;
   transition-duration: 450ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media (any-hover: hover) {
   .header__bottom-menu-link:hover {
-    border-bottom: 3px solid var(--accent);
-    font-weight: 600;
+    color: #000;
+  }
+  .header__bottom-menu-link:hover::after {
+    width: 100%;
+    right: auto;
+    left: 0;
+  }
+}
+.header__bottom-menu-link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: auto;
+  right: 0;
+  background-color: var(--accent);
+  height: 0.1875rem;
+  bottom: -0.125rem;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero {
+  padding-top: 80px;
+}
+@media screen and (max-width: 1200px) {
+  .hero {
+    padding-top: calc(25px + 55 * ((100vw - 320px) / 880));
+  }
+}
+.hero__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__slider {
+  max-width: 54.375rem;
+  position: relative;
+}
+.hero__slider-svg {
+  color: var(--white);
+}
+.hero__slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__slider-arrow-next {
+  right: 1.25rem;
+}
+.hero__slider-arrow-prev {
+  left: 1.25rem;
+}
+@media (any-hover: hover) {
+  .hero__slider-arrow:hover {
+    color: var(--accent);
   }
 }
 
-.hero__slider-title {
-  color: var(--main-text);
-  text-align: center;
-  font-size: 3.125rem;
-  font-weight: 700;
-  line-height: 1;
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5625rem;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--white);
+}
+
+.slick-active button {
+  background-color: var(--white);
 }/*# sourceMappingURL=style.css.map */

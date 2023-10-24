@@ -112,19 +112,32 @@
   }
 
   &__bottom-menu-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     padding: rem(15) 0 rem(14);
-    border-bottom: 3px solid transparent;
-    @include transition ($transition-property: (border-bottom, font-weight));
+    @include transition ($transition-property: color);
 
     @media (any-hover: hover) {
       &:hover {
-        border-bottom: 3px solid var(--accent);
-        font-weight: 600;
+        color: #000;
       }
+
+      &:hover::after {
+        width: 100%;
+        right: auto;
+        left: 0;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0;
+      left: auto;
+      right: 0;
+      background-color: var(--accent);
+      height: rem(3);
+      bottom: rem(-2);
+      @include transition ($transition-property:all);
     }
   }
 }
