@@ -11,10 +11,16 @@
   &__slider {
     max-width: rem(870);
     position: relative;
+
+    &-img {
+      object-fit: cover;
+      min-height: rem(400);
+    }
+
     &-svg {
       color: var(--white);
     }
-
+    
     &-arrow {
       position: absolute;
       top: 50%;
@@ -24,12 +30,18 @@
       &-next {
         right: rem(20);
       }
+
       &-prev {
         left: rem(20);
       }
 
       @include transition ($transition-property: color);
-      @media (any-hover: hover) {&:hover{color: var(--accent)}}
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: var(--accent);
+        }
+      }
     }
   }
 }

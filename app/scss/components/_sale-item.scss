@@ -1,0 +1,81 @@
+.sale-item {
+  max-width: rem(265);
+  text-align: center;
+  border-radius: rem(3);
+  border: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    font-family: Barlow;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__action {
+    display: inline-block;
+    color: var(--white);
+    @extend %ProximaNova-700;
+    font-size: rem(12);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: var(--accent);
+    padding: rem(8) rem(20);
+  }
+
+  &__price {
+    text-align: right;
+
+    &-new {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: rem(27);
+      margin-right: rem(6);
+      margin-bottom: rem(7);
+
+      &-svg {
+        fill: var(--accent);
+      }
+    }
+
+    &-old {
+      margin-right: rem(4);
+      color: var(--gray);
+      font-size: rem(14);
+      font-weight: 400;
+      background-image: url(../images/old-line.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+      padding: rem(2) rem(5);
+
+      &-svg {
+        fill: var(--gray);
+      }
+    }
+
+
+  }
+
+  &__img {
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin-bottom: rem(7);
+  }
+  &__bottom {
+    background-color: var(--background);
+    padding: rem(25) rem(20);
+    font-size: rem(18);
+
+    &-data {
+      color: var(--accent);
+      @extend %Barlow-700;
+    }
+  }
+
+}

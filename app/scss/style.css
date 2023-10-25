@@ -145,8 +145,8 @@ summary {
   font-display: swap;
 }
 @font-face {
-  font-family: "proximanova";
-  src: url(../fonts/proximanova-regular.woff2) format("woff2"), url(../fonts/proximanovas-regular.woff) format("woff");
+  font-family: "ProximaNova";
+  src: url(../fonts/ProximaNova-regular.woff2) format("woff2"), url(../fonts/ProximaNova-regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -179,20 +179,35 @@ summary {
   font-style: normal;
   font-display: swap;
 }
+.sale-item__bottom-data {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+}
+
 @font-face {
-  font-family: "proximanova";
-  src: url(../fonts/proximanova-Bold.woff2) format("woff2"), url(../fonts/proximanova-Bold.woff) format("woff");
+  font-family: "ProximaNova";
+  src: url(../fonts/ProximaNova-Bold.woff2) format("woff2"), url(../fonts/ProximaNova-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+.sale-item__action {
+  font-family: "ProximaNova", sans-serif;
+  font-weight: 700;
+}
+
 @font-face {
-  font-family: "OpenSans";
-  src: url(../fonts/OpenSans-Bold.woff2) format("woff2"), url(../fonts/OpenSans-Bold.woff) format("woff");
+  font-family: "SFProDisplay";
+  src: url(../fonts/SFProDisplay-Bold.woff2) format("woff2"), url(../fonts/SFProDisplay-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+.title-h5 {
+  font-family: "SFProDisplay", sans-serif;
+  font-weight: 700;
+}
+
 :root {
   --accent: #1C62CD;
   --background: #F0F0F4;
@@ -459,6 +474,11 @@ button,
   max-width: 54.375rem;
   position: relative;
 }
+.hero__slider-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 25rem;
+}
 .hero__slider-svg {
   color: var(--white);
 }
@@ -503,4 +523,77 @@ button,
 
 .slick-active button {
   background-color: var(--white);
+}
+
+.sale-item {
+  max-width: 16.5625rem;
+  text-align: center;
+  border-radius: 0.1875rem;
+  border: 1px solid var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sale-item__top {
+  font-family: Barlow;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.sale-item__action {
+  display: inline-block;
+  color: var(--white);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: var(--accent);
+  padding: 0.5rem 1.25rem;
+}
+.sale-item__price {
+  text-align: right;
+}
+.sale-item__price-new {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.6875rem;
+  margin-right: 0.375rem;
+  margin-bottom: 0.4375rem;
+}
+.sale-item__price-new-svg {
+  fill: var(--accent);
+}
+.sale-item__price-old {
+  margin-right: 0.25rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  font-weight: 400;
+  background-image: url(../images/old-line.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  padding: 0.125rem 0.3125rem;
+}
+.sale-item__price-old-svg {
+  fill: var(--gray);
+}
+.sale-item__img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+.sale-item__title {
+  margin-bottom: 0.4375rem;
+}
+.sale-item__bottom {
+  background-color: var(--background);
+  padding: 1.5625rem 1.25rem;
+  font-size: 1.125rem;
+}
+.sale-item__bottom-data {
+  color: var(--accent);
+}
+
+.title-h5 {
+  color: var(--main-text);
+  font-size: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
