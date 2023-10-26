@@ -26,14 +26,11 @@
 //   letter-spacing: rem(4.3);
 // }
 
-// .subtitle-h4 {
-//   color: var(--white);
-//   @extend %OpenSans-600;
-//   font-size: rem(14);
-//   line-height: 1;
-//   letter-spacing: rem(1.4);
-//   text-transform: uppercase;
-// }
+.title-h4 {
+  color: var(--main-text);
+    @extend %Barlow-700;
+    font-size: rem(23);
+}
 
 .title-h5 {
   color: var(--main-text);
