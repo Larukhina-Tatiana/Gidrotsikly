@@ -122,6 +122,10 @@ button,
     //     flex: 1 0 auto;
 }
 
+.section {
+    @include adaptivevalue(padding-top, 80, 25, 1200, 320, 1);
+}
+
 // .footer {
 //     flex: 0 0 auto;
 // }
@@ -172,4 +176,3 @@ button,
     clip-path: inset(50%);
     margin: -1px;
 }
-

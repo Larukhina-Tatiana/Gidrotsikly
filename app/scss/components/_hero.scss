@@ -1,10 +1,7 @@
 .hero {
-  @include adaptivevalue(padding-top, 80, 25, 1200, 320, 1);
-
 
   &__inner {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
 
