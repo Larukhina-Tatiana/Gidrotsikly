@@ -8,7 +8,7 @@
       display: inline-block;
     }
 
-    &-link {
+    &-link.tabs__link {
       padding: rem(11) rem(26) rem(12);
       @include transition ($transition-property: color);
 
@@ -18,7 +18,7 @@
         }
       }
 
-      &--active {
+      &--active.tabs__link {
         border-radius: rem(5);
         background-color: var(--background);
         font-weight: 700;
@@ -31,7 +31,8 @@
     &-item {
       display: none;
     }
-    &-item--active {
+
+    .tabs__content--active.tabs__content {
       display: block;
     }
 

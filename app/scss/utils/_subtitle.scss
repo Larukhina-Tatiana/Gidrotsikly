@@ -28,8 +28,8 @@
 
 .title-h4 {
   color: var(--main-text);
-    @extend %Barlow-700;
-    font-size: rem(23);
+  @extend %Barlow-700;
+  font-size: rem(23);
 }
 
 .title-h5 {
@@ -37,6 +37,13 @@
   @extend %SFProDisplay-700;
   font-size: rem(18);
   // @include adaptivevalue(font-size, 40, 24, 1440, 750, 1);
+}
+
+.title-h6 {
+  color: var(--main-text);
+  @extend %SFProDisplay-400;
+  font-size: rem(18);
+  text-align: center;
 }
 
 // .subtitle-h6 {
@@ -47,3 +54,10 @@
 //   letter-spacing: rem(1.3);
 //   text-transform: uppercase;
 // }
+
+.price {
+  color: var(--main-text);
+  text-align: center;
+  @extend %Barlow-700;
+  font-size: rem(30);
+}
