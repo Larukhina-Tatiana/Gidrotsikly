@@ -1,0 +1,32 @@
+.tabs {
+  display: flex;
+  align-items: center;
+
+  &__link {
+    position: relative;
+    color: var(--main-text);
+    text-align: center;
+    font-size: rem(15);
+    font-weight: 500;
+    padding-bottom: rem(6);
+    @include transition ($transition-property: color);
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: var(--accent);
+      }
+    }
+
+
+
+
+  }
+}
+
+        .tabs__content {
+          display: none;
+        }
+
+        .tabs__content--active.tabs__content {
+          display: block;
+        }

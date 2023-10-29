@@ -1,7 +1,6 @@
 .search {
 
   &__tabs {
-    // display: flex;
     margin-bottom: rem(25);
 
     &-item {
@@ -28,13 +27,13 @@
 
   &__content {
 
-    &-item {
-      display: none;
-    }
+    // .tabs__content {
+    //   display: none;
+    // }
 
-    .tabs__content--active.tabs__content {
-      display: block;
-    }
+    // .tabs__content--active.tabs__content {
+    //   display: block;
+    // }
 
     &-form {
       display: flex;
