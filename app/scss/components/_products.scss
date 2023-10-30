@@ -1,4 +1,5 @@
 .products {
+  padding-bottom: rem(80);
 
   &__slider {
     &-svg {
@@ -198,7 +199,7 @@
     width: rem(252);
     height: re(50);
     padding: rem(10);
-    margin: rem(35) auto;
+    margin: rem(35) auto rem(0) auto;
     @include transition ($transition-property: (background-color, color));
     
       @media (any-hover: hover) {

@@ -1,0 +1,82 @@
+.footer {
+  background-color: var(--background);
+  @include adaptivevalue(padding-top, 42, 17, 1200, 320, 1);
+  @include adaptivevalue(padding-bottom, 42, 62, 1200, 320, 1);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(46);
+    gap: rem(10);
+  }
+
+  &__form {
+    &-inner {
+      max-width: rem(294);
+      margin-right: 59px;
+    }
+
+    &-text {
+      max-width: rem(222);
+      font-size: rem(14);
+      font-weight: 700;
+      @include adaptivevalue(margin-bottom, 40, 20, 1200, 320, 1);
+    }
+
+    &-mail {
+      display: flex;
+
+      &-input {
+        background-color: var(--white);
+        max-width: rem(186);
+        padding: rem(8) rem(12);
+        font-size: rem(14);
+        border: none;
+        ::placeholder {
+        color: var(--gray);
+        }
+      }
+
+      &-button {
+        max-width: rem(109);
+        padding: rem(10) rem(16);
+        text-align: center;
+        font-size: rem(11);
+        font-weight: 600;
+        letter-spacing: rem(1.32);
+        text-transform: uppercase;
+        color: var(--white);
+        background-color: var(--accent);
+      }
+    }
+  }
+
+  &__info {
+    width: rem(200);
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: rem(6);
+      }
+    }
+
+    &-link {
+      font-size: 14px;
+    }
+  }
+
+
+
+  &__bottom {
+    display: flex;
+    justify-content: center;
+    @include adaptivevalue(gap, 80, 12, 1200, 320, 1);
+
+
+    &-link {
+      color: #48494D;
+        font-size: rem(10);
+    }
+  }
+
+}

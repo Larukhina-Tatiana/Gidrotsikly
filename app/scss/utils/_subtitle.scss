@@ -14,24 +14,39 @@
 //   letter-spacing: rem(4.3);
 // }
 
-.title-h4 {
+.title-h3 {
   color: var(--main-text);
   @extend %Barlow-700;
   font-size: rem(23);
 }
 
-.title-h5 {
+.title-h3 {
+  color: var(--main-text);
+  @extend %Barlow-700;
+  font-size: rem(23);
+}
+
+.title-h4 {
   color: var(--main-text);
   @extend %SFProDisplay-700;
   font-size: rem(18);
   // @include adaptivevalue(font-size, 40, 24, 1440, 750, 1);
 }
 
-.title-h6 {
+
+
+.title-h5 {
   color: var(--main-text);
   @extend %SFProDisplay-400;
   font-size: rem(18);
   text-align: center;
+}
+
+.title-h6 {
+  font-size: rem(14);
+  text-align: center;
+  margin-bottom: rem(6);
+  text-align: left;
 }
 
 // .subtitle-h6 {
