@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 *, ::after, ::before {
   box-sizing: border-box;
@@ -137,7 +138,9 @@ summary {
   font-style: normal;
   font-display: swap;
 }
-.catalog__pagination-item {
+.irs-min::before,
+.irs-max::before, .irs--flat .irs-min,
+.irs--flat .irs-max, .catalog__pagination-item {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
 }
@@ -640,6 +643,25 @@ ul > .slick-active button {
   text-align: left;
 }
 
+.title-form {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-left: 1.625rem;
+  position: relative;
+}
+.title-form::before {
+  position: absolute;
+  content: url(../images/drop-arrow.svg);
+  width: 0.75rem;
+  height: 0.5rem;
+  left: 0rem;
+  cursor: pointer;
+}
+.title-form--active::before {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
 .price {
   color: var(--main-text);
   text-align: center;
@@ -1132,15 +1154,18 @@ ul > .slick-active button {
   display: flex;
 }
 .catalog__aside {
-  width: 18.125rem;
+  min-width: 18.125rem;
   margin-right: 0.625rem;
 }
 .catalog__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.875rem;
+  gap: 1.875rem 0;
   margin-bottom: 4.375rem;
+}
+.catalog__list .products__card {
+  margin-right: 0;
 }
 .catalog__pagination {
   width: 100%;
@@ -1157,4 +1182,154 @@ ul > .slick-active button {
 .catalog__pagination-item.active {
   border: 0.125rem solid var(--accent);
   color: var(--accent);
+}
+
+.aside__tabs {
+  display: flex;
+  justify-content: space-between;
+}
+.aside__tabs-item {
+  width: 50%;
+}
+.aside__tabs-link {
+  color: var(--gray);
+  font-size: 1rem;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+}
+.aside__tabs-link.tabs__link--active {
+  color: var(--main-text);
+  font-weight: 700;
+}
+.aside__tabs-link.tabs__link--active span {
+  display: inline-block;
+  padding-bottom: 0.4375rem;
+  border-bottom: 0.125rem solid var(--accent);
+}
+.aside__form-item-drop {
+  margin: 2.5rem 0;
+}
+.aside__form-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+.aside__form-content-box {
+  width: 50%;
+}
+.aside__form-content-label {
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.aside__form-content.aside__form-content--radio {
+  flex-wrap: nowrap;
+}
+
+.jq-checkbox,
+.jq-radio {
+  width: 0.875rem;
+  height: 0.875rem;
+  background: var(--white);
+  box-shadow: none;
+  border: 0.0625rem solid var(--gray);
+  vertical-align: -0.125rem;
+  border-radius: 0.0625rem;
+  margin: 0 0.5rem 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: var(--accent);
+  border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 8px;
+  height: 6px;
+  margin: 0.25rem 0.1875rem;
+  border: none;
+  transform: rotate(0);
+  background-image: url(../images/check.svg);
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  background: var(--accent);
+  border-radius: none;
+  box-shadow: none;
+}
+
+.irs--flat {
+  width: 100%;
+  margin-top: -0.9375rem;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  top: 3.75rem;
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--main-text);
+  text-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  visibility: visible !important;
+  padding-left: 1.6875rem;
+}
+
+.irs-min::before,
+.irs-max::before {
+  position: absolute;
+  font-size: 0.875rem;
+  color: var(--gray);
+  text-decoration: none;
+  left: 0;
+}
+
+.irs-min::before {
+  content: "от";
+}
+
+.irs-max::before {
+  content: "до";
+}
+
+.irs--flat .irs-line {
+  top: 1.5625rem;
+  height: 0.0625rem;
+  background-color: #E0E0E0;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 1.5rem;
+  height: 0.1875rem;
+  background-color: var(--accent);
+}
+
+.irs--flat .irs-handle {
+  top: 1.375rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+.irs--flat .irs-handle > i:first-child {
+  background-color: transparent;
+}
+
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
+  background-color: transparent;
 }/*# sourceMappingURL=style.css.map */

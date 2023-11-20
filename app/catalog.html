@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гидроциклы</title>
   <link rel="stylesheet" href="libs/slick/slick.css">
+  <link rel="stylesheet" href="./css/ion.rangeSlider.min.css">
+  <link rel="stylesheet" href="./css/jquery.formstyler.css">
+  <link rel="stylesheet" href="./css/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="./css/jquery.rateyo.min.css">
   <link rel="stylesheet" href="./scss/style.css">
 </head>
 
@@ -27,7 +31,7 @@
             </li>
           </ul>
         </nav>
-        <a class="header__logo" href="">
+        <a class="header__logo" href="index.html">
           <svg class="header__logo-svg" width="80" height="76" aria-label="icon logo">
             <use href="./images/icons.svg#logo"></use>
           </svg>
@@ -123,7 +127,7 @@
             </li>
           </ul>
           <div class="catalog__view">
-            <select>
+            <select class="filter-style">
               <option value=""></option>
               <option value=""></option>
               <option value=""></option>
@@ -150,9 +154,82 @@
           </div>
         </div>
         <div class="catalog__inner">
-          <aside class="catalog__aside">
+          <aside class="catalog__aside aside">
+            <ul class="tabs aside__tabs">
+              <li class="tabs__item aside__tabs-item">
+                <a class="tabs__link aside__tabs-link tabs__link--active" href="#aside-tab1"><span>Параметры</span></a>
+              </li>
+              <li class="tabs__item aside__tabs-item">
+                <a class="tabs__link aside__tabs-link" href="#aside-tab2"><span>по марке</span></a>
+              </li>
+            </ul>
+            <div class="tabs__container aside__container">
+              <div class="tabs__content tabs__content--active aside__content-item">
 
+                <form class="aside__form">
+                  <ul class="aside__form-list">
+                    <li class="aside__form-item-drop">
+                      <p class="aside__form-title title-form">Наличие</p>
+                      <div class="aside__form-content">
+                        <div class="aside__form-content-box">
+
+                          <label class="aside__form-content-label">
+                            <input class="filter-style" type="checkbox">
+                            В наличие
+                          </label>
+                        </div>
+                        <div class="aside__form-content-box">
+
+                          <label class="aside__form-content-label">
+                            <input class="filter-style" type="checkbox">
+                            Под заказ
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside__form-item-drop">
+                      <p class="aside__form-title title-form">Новинки</p>
+                      <div class="aside__form-content aside__form-content--radio">
+                        <div class="aside__form-content-box">
+
+                          <label class="aside__form-content-label">
+                            <input class="filter-style" name="radio" type="radio">
+                            Все
+                          </label>
+                        </div>
+                        <div class="aside__form-content-box">
+
+                          <label class="aside__form-content-label">
+                            <input class="filter-style" name="radio" type="radio">
+                            Новинки
+                          </label>
+                        </div>
+
+                        <div class="aside__form-content-box">
+
+                          <label class="aside__form-content-label">
+                            <input class="filter-style" name="radio" type="radio">
+                            Акции
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside__form-item-drop">
+                      <p class="aside__form-title title-form">Цена</p>
+                      <div class="aside__form-content">
+                        <input type="text" class="js-range-slider" name="my_range" value=""
+                          data-min="100000" data-max="500000" data-from="150000" data-to="275000" />
+                      </div>
+                    </li>
+                    <li class="aside__form-item-drop"></li>
+
+                  </ul>
+                </form>
+              </div>
+            </div>
           </aside>
+
+
           <ul class="catalog__list">
             <li class="products__card">
               <button class="products__card-favorite"></button>
@@ -176,7 +253,7 @@
                 <p class="products__card-notify">нет в наличии</p>
               </a>
             </li>
-            
+
             <li class="products__card">
               <button class="products__card-favorite"></button>
               <button class="products__card-basket"></button>
@@ -214,11 +291,11 @@
                   <img class="products__card-img" src="./images/content/gidrotsikl-3.jpg"
                     alt="Гидроцикл BRP SeaDoo GTR 230hp X California green">
                 </picture>
-            
+
                 <h5 class="products__card-title title-h5">Гидроцикл BRP SeaDoo GTR 230hp X California green
                 </h5>
                 <p class="products__card-price price">1 323 700 &#8372;</p>
-            
+
                 <p class="products__card-hover">посмотреть товар</p>
                 <p class="products__card-notify">нет в наличии</p>
               </a>
@@ -606,6 +683,9 @@
   <script src="libs/slick/slick.min.js"></script>
   <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
 
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

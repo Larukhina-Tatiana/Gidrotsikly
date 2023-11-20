@@ -20,8 +20,10 @@ $(function () {
 $(".tabs__link").on('click', function (e) {
   e.preventDefault();
 
-  $($(this).siblings()).removeClass("tabs__link--active");
-  $($(this).parent().siblings().find(".tabs__content")).removeClass("tabs__content--active");
+  // $($(this).siblings()).removeClass("tabs__link--active");
+  $($(this).parent().siblings().find(".tabs__link")).removeClass("tabs__link--active");
+
+  $($(this).parents().siblings().find(".tabs__content")).removeClass("tabs__content--active");
 
   $(this).addClass("tabs__link--active");
   $($(this).attr("href")).addClass("tabs__content--active");
@@ -47,6 +49,22 @@ $(function () {
       '<button type="button" class="products__slider-arrow products__slider-arrow-prev"><svg class="products__slider-svg" width="15" height="28" aria-label="prev arrow"><use href="./images/icons.svg#prev"></use></svg></button> ',
   });
 });
+
+
+$(".filter-style").styler();
+
+
+$(".title-form").on("click", function () {
+  $(this).toggleClass("title-form--active");
+  $(this).next().slideToggle('200');
+});
+
+$(".js-range-slider").ionRangeSlider({
+  type: "double",
+  min: 100000,
+  max: 500000,
+});
+
 
 // var mixer = mixitup(".portfolio__box", {
 //   load: {

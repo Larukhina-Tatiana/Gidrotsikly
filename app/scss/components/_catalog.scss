@@ -32,7 +32,7 @@
   }
 
   &__aside {
-    width: rem(290);
+    min-width: rem(290);
     margin-right: rem(10);
   }
 
@@ -40,8 +40,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: rem(30);
+    gap: rem(30) 0;
     margin-bottom: rem(70);
+
+    & .products__card {
+      margin-right: 0;
+    }
   }
 
   &__pagination {

@@ -49,6 +49,28 @@
   text-align: left;
 }
 
+.title-form {
+  font-size: rem(16);
+  font-weight: 600;
+  padding-left: rem(26);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url(../images/drop-arrow.svg);
+    width: rem(12);
+    height: rem(8);
+    left: rem(0);
+    cursor: pointer;
+
+  }
+
+  &--active::before {
+    bottom: 0;
+    transform: rotate(180deg);
+  }
+}
+
 // .subtitle-h6 {
 //   color: var(--gray);
 //   @extend %Montserrat-700;

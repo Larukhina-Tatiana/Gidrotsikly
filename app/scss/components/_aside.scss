@@ -1,0 +1,183 @@
+.aside {
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+
+    &-item {
+
+      width: 50%;
+    }
+
+    &-link {
+      color: var(--gray);
+      font-size: rem(16);
+      letter-spacing: 1.44px;
+      text-transform: uppercase;
+
+      &.tabs__link--active {
+        color: var(--main-text);
+        font-weight: 700;
+
+        span {
+          display: inline-block;
+          padding-bottom: rem(7);
+          border-bottom: rem(2) solid var(--accent);
+
+        }
+      }
+    }
+  }
+
+  &__form {
+    &-item-drop {
+      margin: rem(40) 0;
+    }
+
+
+    &-content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: rem(20);
+
+      &-box {
+        width: 50%;
+      }
+
+      &-label {
+        font-size: rem(14);
+        cursor: pointer;
+      }
+
+      &.aside__form-content--radio {
+        flex-wrap: nowrap;
+      }
+    }
+
+
+  }
+
+}
+
+
+
+
+
+
+
+.jq-checkbox,
+.jq-radio {
+  width: rem(14);
+  height: rem(14);
+  background: var(--white);
+  box-shadow: none;
+  border: rem(1) solid var(--gray);
+  vertical-align: rem(-2);
+  border-radius: rem(1);
+  margin: 0 rem(8) 0 0;
+}
+
+.jq-checkbox.checked,
+.jq-radio.checked {
+  background: var(--accent);
+  border: none;
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 8px;
+  height: 6px;
+  margin: rem(4) rem(3);
+  border: none;
+  transform: rotate(0);
+  background-image: url(../images/check.svg);
+}
+
+.jq-radio.checked .jq-radio__div {
+  width: 0;
+  height: 0;
+  margin: 0;
+  background: var(--accent);
+  border-radius: none;
+  box-shadow: none;
+}
+
+
+
+.irs--flat {
+  width: 100%;
+  margin-top: rem(-15);
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  top: rem(60);
+  padding: 0;
+  @extend %Barlow-400;
+  font-size: rem(14);
+  color: var(--main-text);
+  text-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  text-decoration-line: underline;
+  visibility: visible !important;
+  padding-left: rem(27);
+
+  }
+
+.irs-min::before,
+.irs-max::before {
+  position: absolute;
+  @extend %Barlow-400;
+  font-size: rem(14);
+  color: var(--gray);
+  text-decoration: none;
+  left: 0;
+
+}
+
+.irs-min::before {
+  content: "от";
+}
+
+.irs-max::before {
+  content: "до";
+}
+
+
+// Линия
+.irs--flat .irs-line {
+  top: rem(25);
+  height: rem(1);
+  background-color: #E0E0E0;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: rem(24);
+  height: rem(3);
+  background-color: var(--accent);
+}
+
+
+.irs--flat .irs-handle {
+  top: rem(22);
+  width: rem(8);
+  height: rem(8);
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+
+.irs--flat .irs-handle>i:first-child {
+background-color: transparent;
+}
+
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
+  background-color: transparent;
+}
