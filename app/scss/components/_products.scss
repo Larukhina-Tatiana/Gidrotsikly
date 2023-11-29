@@ -51,7 +51,7 @@
     width: rem(270);
     height: rem(403);
     position: relative;
-    @include transition ($transition-property: box-shadow);
+    @include transition ($transition-property: all);
     margin-right: rem(30);
 
 
