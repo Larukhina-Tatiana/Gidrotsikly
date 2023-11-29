@@ -157,6 +157,9 @@
     &-hover {
       position: absolute;
       top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: rem(230);
       opacity: 0;
 
       padding: rem(18) rem(21);
@@ -188,6 +191,10 @@
         border-bottom: 1px solid var(--accent);
       }
     }
+
+    &--line {
+      width: 100%;
+    }
   }
 
   &__link-more {
@@ -201,13 +208,13 @@
     padding: rem(10);
     margin: rem(35) auto rem(0) auto;
     @include transition ($transition-property: (background-color, color));
-    
-      @media (any-hover: hover) {
-        &:hover {
-          background-color: var(--accent);
-          color: var(--white);
-        }
+
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: var(--accent);
+        color: var(--white);
       }
+    }
   }
 }
 

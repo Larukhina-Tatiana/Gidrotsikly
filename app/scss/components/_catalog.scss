@@ -23,6 +23,30 @@
     }
   }
 
+  &__view {
+    display: flex;
+    align-items: center;
+
+    &-button {
+      opacity: .3;
+      &--active {
+        opacity: 1;
+      }
+    }
+
+    &-btngrid {
+      width: rem(26);
+      height: rem(21);
+    }
+
+    &-btnline {
+      width: rem(25);
+      height: rem(19);
+    }
+  }
+
+
+
   &__view button + button {
     margin-left: rem(10);
   }
@@ -69,4 +93,12 @@
 
   }
 
+}
+
+.filter-style.select-item {
+  margin-right: rem(34);
+  padding: rem(7) rem(10) rem(7) rem(20);
+  @extend %SFProDisplay-400;
+  font-size: rem(14);
+  border: 1.5px solid #D7D9DF;
 }

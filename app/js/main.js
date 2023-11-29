@@ -54,9 +54,9 @@ $(function () {
 $(".filter-style").styler();
 
 
-$(".title-form").on("click", function () {
+$(".title-form, .aside__form-filter-btn-extra").on("click", function () {
   $(this).toggleClass("title-form--active");
-  $(this).next().slideToggle('200');
+  $(this).next().slideToggle("200");
 });
 
 $(".js-range-slider").ionRangeSlider({
@@ -65,6 +65,18 @@ $(".js-range-slider").ionRangeSlider({
   max: 500000,
 });
 
+
+// Плитка Список 
+$(".catalog__view-btngrid").on("click", function () {
+  $(this).addClass("catalog__view-button--active");
+  $(".catalog__view-btnline").removeClass("catalog__view-button--active");
+  $(".products__card").removeClass("products__card--line");
+});
+$(".catalog__view-btnline").on("click", function () {
+  $(this).addClass("catalog__view-button--active");
+  $(".catalog__view-btngrid").removeClass("catalog__view-button--active");
+  $(".products__card").addClass("products__card--line");
+});
 
 // var mixer = mixitup(".portfolio__box", {
 //   load: {
