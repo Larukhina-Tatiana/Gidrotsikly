@@ -24,7 +24,7 @@
 @import "./components/breadcrumbs";
 @import "./components/_catalog";
 @import "./components/_aside";
-// @import "./components/_pricing";
+@import "./components/_card-product";
 // @import "./components/_contact";
 // @import "./components/_clients";
 
@@ -34,3 +34,14 @@
 
 // @include transition ($transition-property: color);
   // @media screen and (width < 1034px ) {}
+
+  //   <picture > <source srcset="
+  //  ./images/hero-bg@1x.webp 870w,
+  //   ./images/hero-bg@2x.webp 1740w,
+  //   ./images/hero-bg@3x.webp 2610w" type=" image/webp" media="(min-width: 1200px)"
+  //  sizes="(min-width: 1200px) 870px" > <source srcset="
+  //  ./images/hero-bg@1x.jpg 870w,
+  //   ./images/hero-bg@2x.jpg 1740w,
+  //   ./images/hero-bg@3x.jpg 26106w " media="(min-width: 1200px)" sizes="(min-width: 1200px) 870px">
+  
+  //   <img class="hero__slider-img" src="./images/hero-bg@1x.jpg" alt="images" > </picture >
