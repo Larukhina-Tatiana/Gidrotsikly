@@ -1,0 +1,70 @@
+.card-product {
+  margin-bottom: rem(80);
+
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @include adaptivevalue(gap, 100, 10, 1200, 320, 1);
+  }
+
+  &__box {
+    max-width: rem(500);
+    position: relative;
+    padding-top: rem(64);
+    text-align: center;
+  }
+
+  &__price {
+    font-family: 'Barlow', sans-serif;
+
+    &-old {
+      color: var(--main-text);
+      opacity: .6;
+      font-size: rem(30);
+      font-weight: 400;
+      margin: rem(17) 0 rem(6) 0;
+      background-image: url(../images/old-line-card.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      display: inline-block;
+    }
+
+    &-new {
+      color: var(--main-text);
+      font-size: rem(40);
+      font-weight: 700;
+      margin: 0 0 rem(17) 0;
+    }
+  }
+
+  &__link {
+    color: var(--accent);
+      // font-family: SF Pro Display;
+      font-size: rem(15);
+    }
+    
+    
+    
+    
+    &__content {
+      max-width: rem(570);
+    }
+
+    &__code {
+    margin: rem(10) 0 rem(20) 0;
+    color: var(--main-text);
+    opacity:  .6;
+    font-size: rem(15);
+  }
+
+  &__buttons {
+    position: relative;
+
+    .products__card-favorite{
+    top: 0;
+    left: 0;
+    margin-right: rem(30);
+    }
+  }
+}
