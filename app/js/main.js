@@ -17,26 +17,27 @@ $(function () {
 });
 
 // ! Tabs
-$(".tabs__link").on('click', function (e) {
+$(".tabs__link").on("click", function (e) {
   e.preventDefault();
 
   // $($(this).siblings()).removeClass("tabs__link--active");
-  $($(this).parent().siblings().find(".tabs__link")).removeClass("tabs__link--active");
+  $($(this).parent().siblings().find(".tabs__link")).removeClass(
+    "tabs__link--active"
+  );
 
-  $($(this).parents().siblings().find(".tabs__content")).removeClass("tabs__content--active");
+  $($(this).parents().siblings().find(".tabs__content")).removeClass(
+    "tabs__content--active"
+  );
 
   $(this).addClass("tabs__link--active");
   $($(this).attr("href")).addClass("tabs__content--active");
 });
-
-
 
 // Иконка фаворит становиться залитой
 
 $(".products__card-favorite").on("click", function () {
   $(this).toggleClass("products__card-favorite--active");
 });
-
 
 $(function () {
   $(".products__slider").slick({
@@ -50,9 +51,7 @@ $(function () {
   });
 });
 
-
 $(".filter-style").styler();
-
 
 $(".title-form, .aside__form-filter-btn-extra").on("click", function () {
   $(this).toggleClass("title-form--active");
@@ -65,8 +64,7 @@ $(".js-range-slider").ionRangeSlider({
   max: 500000,
 });
 
-
-// Плитка Список 
+// Плитка Список
 $(".catalog__view-btngrid").on("click", function () {
   $(this).addClass("catalog__view-button--active");
   $(".catalog__view-btnline").removeClass("catalog__view-button--active");
@@ -78,9 +76,14 @@ $(".catalog__view-btnline").on("click", function () {
   $(".products__card").addClass("products__card--line");
 });
 
+// Звёздный рейтинг
+$(".rate-yo").rateYo({
+  ratedFill: "#1C62CD",
+  spacing: "7px",
+  normalFill: "#C4C4C4",
+});
 // var mixer = mixitup(".portfolio__box", {
 //   load: {
 //     filter: ".branding",
 //   },
 // });
-

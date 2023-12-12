@@ -128,7 +128,7 @@
 
               <img class="card-product__img"
                 src="./images/content/gidrotsikl-brp-seedoo-gti-155hp-se-long-beach-blue-metallic@3x.jpg"
-                alt="images gidrotsikl-brp-seedoo-gti-155hp-se-long-beach-blue-metallic"> 
+                alt="images gidrotsikl-brp-seedoo-gti-155hp-se-long-beach-blue-metallic">
             </picture>
             <p class="card-product__price-old">1 200 475 &#8372;</p>
             <p class="card-product__price-new">1 100 475 &#8372;</p>
@@ -141,67 +141,163 @@
             <p class="card-product__code">
               Код товара: 366666-2
             </p>
-            <div class="card-product__buttons">
-              <button class="products__card-favorite" title="В избранное"></button>
-              <button class="card-product__comparsion" title="В сравнение">
+            <div class="card-product__user-links">
+              <a class="card-product__user-favorite" title="В избранное" href="#">
+                <img src="./images/favorite.svg" alt="Иконка сравнения"></img>
+              </a>
+              <a class="card-product__user-comparsion" title="В сравнение" href="#">
                 <img src="./images/comparsion.svg" alt="Иконка сравнения"></img>
                 </svg>
-              </button>
-              <div class="rate"></div>
+              </a>
+              <a class="rate" href="">
+                <div class="rate-yo" data-rateyo-rating="4"></div>
+              </a>
             </div>
 
-
-
-            <div class="tabs-wrapper card-products__tabs">
+            <div class="tabs-wrapper card-product__tabs">
               <ul class="tabs products__tabs">
                 <li class="tabs__item products__tabs-item">
-                  <a class="tabs__link  products__tabs-link tabs__link--active" href="#">
+                  <a class="tabs__link products__tabs-link card-product__tabs-link tabs__link--active"
+                    href="#product-1">
                     Характеристики
                   </a>
                 </li>
 
                 <li class="tabs__item products__tabs-item">
-                  <a class="tabs__link products__tabs-link" href="#">Наличие в магазине</a>
+                  <a class="tabs__link products__tabs-link card-product__tabs-link" href="#product-2">
+                    Наличие в магазине
+                  </a>
                 </li>
               </ul>
               <ul class="tabs__container products__container">
-                <li id="buy-tab1" class="tabs__content tabs__content--active products__content">
-                  <dl class="card-products__list">
-                    <div class="card-products__list-desc">
+                <li id="product-1" class="tabs__content tabs__content--active products__content">
+                  <dl class="card-product__list">
+                    <div class="card-product__list-desc">
                       <dt>Производитель</dt>
                       <dd>Канада</dd>
                     </div>
-                    <div class="card-products__list-desc">
+                    <div class="card-product__list-desc">
                       <dt>Количество мест, шт:</dt>
                       <dd>3</dd>
                     </div>
-                    <div class="card-products__list-desc">
+                    <div class="card-product__list-desc">
                       <dt>Мощность, л.с.</dt>
                       <dd>155</dd>
                     </div>
-                    <div class="card-products__list-desc">
+                    <div class="card-product__list-desc">
                       <dt>Тип двигателя</dt>
                       <dd>Бензиновый</dd>
                     </div>
-                    <div class="card-products__list-desc">
+                    <div class="card-product__list-desc">
                       <dt>Год выпуска</dt>
                       <dd>2018</dd>
                     </div>
                   </dl>
-                  <a class="aside__form-filter-more-btn card-products__more" href="">Показать еще</a>
+                  <a class="aside__form-filter-more-btn card-product__more" href="">Показать еще</a>
                 </li>
-                <li id="buy-tab2" class="tabs__content products__content">
+                <li id="product-2" class="tabs__content products__content">
                   Content2
                 </li>
 
               </ul>
             </div>
-            <button class="card-product__btn-buy">Купить</button>
+            <button class="card-product__btn-buy btn-buy">Купить</button>
           </div>
         </div>
       </div>
-
     </section>
+    <section class="card-product__tabs-product">
+      <div class="container">
+        <div class="tabs-wrapper card-product__tabs">
+          <ul class="tabs products__tabs">
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-1">
+                О товаре
+              </a>
+            </li>
+
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-2">
+                Характеристики
+              </a>
+            </li>
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-3">
+                Отзывы
+              </a>
+            </li>
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link tabs__link--active"
+                href="#tabs-product-4">
+                Самовывоз
+              </a>
+            </li>
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-5">
+                Доставка
+              </a>
+            </li>
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-6">
+                Cервис
+              </a>
+            </li>
+            <li class="tabs__item products__tabs-item">
+              <a class="tabs__link products__tabs-link card-product__tabs-link" href="#tabs-product-7">
+                Гарантия
+              </a>
+            </li>
+          </ul>
+          <ul class="tabs__container">
+            <li class="tabs__content" id="tabs-product-1">
+              <dl class="card-product__list">
+                <div class="card-product__list-desc">
+                  <dt>Производитель</dt>
+                  <dd>Канада</dd>
+                </div>
+                <div class="card-product__list-desc">
+                  <dt>Количество мест, шт:</dt>
+                  <dd>3</dd>
+                </div>
+                <div class="card-product__list-desc">
+                  <dt>Мощность, л.с.</dt>
+                  <dd>155</dd>
+                </div>
+                <div class="card-product__list-desc">
+                  <dt>Тип двигателя</dt>
+                  <dd>Бензиновый</dd>
+                </div>
+                <div class="card-product__list-desc">
+                  <dt>Год выпуска</dt>
+                  <dd>2018</dd>
+                </div>
+              </dl>
+
+            </li>
+            <li class="tabs__content" id="tabs-product-2">
+              Content2
+            </li>
+            <li class="tabs__content" id="tabs-product-3">
+              Content3
+            </li>
+            <li class="tabs__content tabs__content--active" id="tabs-product-4">
+
+            </li>
+            <li class="tabs__content" id="tabs-product-5">
+              Content5
+            </li>
+            <li class="tabs__content" id="tabs-product-6">
+              Content6
+            </li>
+            <li class="tabs__content" id="tabs-product-7">
+              Content7
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
 
   </main>
   <footer class="footer">

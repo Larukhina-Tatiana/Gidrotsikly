@@ -8,7 +8,7 @@
     text-align: center;
     font-size: rem(15);
     font-weight: 500;
-    padding-bottom: rem(6);
+    padding-bottom: rem(5);
     @include transition ($transition-property: color);
 
     @media (any-hover: hover) {
@@ -23,10 +23,10 @@
   }
 }
 
-        .tabs__content {
-          display: none;
-        }
+.tabs__content {
+  display: none;
+}
 
-        .tabs__content--active.tabs__content {
-          display: block;
-        }
+.tabs__content--active.tabs__content {
+  display: block;
+}

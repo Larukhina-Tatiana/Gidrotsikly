@@ -1,10 +1,15 @@
 .card-product {
   margin-bottom: rem(80);
 
+  &__tabs {
+    margin-bottom: rem(45);
+  }
+
 
   &__inner {
     display: flex;
     justify-content: space-between;
+    // align-items: center;
     @include adaptivevalue(gap, 100, 10, 1200, 320, 1);
   }
 
@@ -13,6 +18,13 @@
     position: relative;
     padding-top: rem(64);
     text-align: center;
+
+    &::before {
+      font-size: rem(15);
+      letter-spacing: .12em;
+      padding: rem(13) rem(25);
+      border-radius: rem(3);
+    }
   }
 
   &__price {
@@ -40,31 +52,72 @@
 
   &__link {
     color: var(--accent);
-      // font-family: SF Pro Display;
-      font-size: rem(15);
-    }
-    
-    
-    
-    
-    &__content {
-      max-width: rem(570);
-    }
-
-    &__code {
-    margin: rem(10) 0 rem(20) 0;
-    color: var(--main-text);
-    opacity:  .6;
     font-size: rem(15);
   }
 
-  &__buttons {
-    position: relative;
 
-    .products__card-favorite{
-    top: 0;
-    left: 0;
+
+
+  &__content {
+    max-width: rem(570);
+  }
+
+  &__code {
+    margin: rem(10) 0 rem(20) 0;
+    font-size: rem(15);
+    color: var(--main-text);
+    opacity: .6;
+  }
+
+  &__user-links {
+    margin-bottom: rem(50);
     margin-right: rem(30);
+  }
+
+  &__user-favorite,
+  &__user-comparsion {
+    margin-right: rem(30);
+    display: inline-block;
+  }
+
+
+  &__tabs-link {
+    font-size: rem(20);
+    opacity: .6;
+  }
+
+  &__tabs-link.tabs__link--active {
+    font-weight: 700;
+    opacity: 1;
+  }
+
+
+
+
+  &__list-desc {
+    display: flex;
+    justify-content: space-between;
+    gap: rem(10);
+    padding-bottom: rem(6);
+    border-bottom: 1px solid rgba(#2F3035, .1);
+    margin-bottom: rem(15);
+
+    dd {
+      width: rem(125);
     }
   }
+
+
+  &__more {
+    display: inline-block;
+    border-bottom: 1px solid var(--accent);
+  }
+
+  &__btn-buy {
+    padding: rem(16) rem(53);
+  }
+}
+
+.rate {
+  display: inline-block;
 }
