@@ -1,7 +1,6 @@
 .card-product {
-  margin-bottom: rem(80);
 
-  &__tabs {
+  &__product-tabs {
     margin-bottom: rem(45);
   }
 
@@ -81,12 +80,12 @@
   }
 
 
-  &__tabs-link {
+  &__product-tabs-link {
     font-size: rem(20);
     opacity: .6;
   }
 
-  &__tabs-link.tabs__link--active {
+  &__product-tabs-link.tabs__link--active {
     font-weight: 700;
     opacity: 1;
   }
@@ -116,7 +115,37 @@
   &__btn-buy {
     padding: rem(16) rem(53);
   }
+
+
+
+
+
+
+
+
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--background);
+    padding: rem(21) rem(0) rem(18);
+    @include adaptivevalue(margin-bottom, 50, 40, 1200, 320, 1);
+
+    &-link {
+      font-size: rem(20);
+      font-weight: 400;
+      color: rgba(#2F3035, .6);
+    }
+  }
+
+
+  &__tabs-link.tabs__link--active {
+    color: var(--main-text);
+    opacity: 1;
+  }
+
 }
+
 
 .rate {
   display: inline-block;
