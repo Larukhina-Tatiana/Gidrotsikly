@@ -4,6 +4,11 @@
 //   menu.classList.toggle("header__menu-list--active");
 // });
 
+$(".menu__btn").on("click", function () {
+  $(".menu").toggleClass("menu-open");
+  $(".menu__btn").toggleClass("menu-open");
+});
+
 $(function () {
   $(".hero__slider").slick({
     dots: true,

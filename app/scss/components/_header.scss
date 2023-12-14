@@ -9,7 +9,7 @@
 
     &-menu-list {
       display: flex;
-      @include adaptivevalue(gap, 50, 15, 1200, 1024, 1);
+      @include adaptivevalue(gap, 50, 15, 1200, 840, 1);
     }
 
     &-menu-link {
@@ -31,17 +31,11 @@
   }
 
   &__location {
-    margin-right: rem(60);
+    @include adaptivevalue(margin-right, 60, 20, 1200, 600, 1);
     max-width: rem(265);
     padding-left: rem(30);
     position: relative;
     @include transition ($transition-property: color);
-
-    @media (any-hover: hover) {
-      &:hover {
-        color: var(--accent);
-      }
-    }
 
     &::before {
       position: absolute;
@@ -63,14 +57,6 @@
 
   &__user-link {
     @include transition ($transition-property: color);
-
-    @media (any-hover: hover) {
-
-      &:hover,
-      &:hover .header__user-svg {
-        color: var(--accent);
-      }
-    }
   }
 
   &__user-link--basket {
@@ -137,7 +123,25 @@
       background-color: var(--accent);
       height: rem(3);
       bottom: rem(-2);
-      @include transition ($transition-property:all);
+      @include transition ($transition-property: all);
+    }
+  }
+
+  @media screen and (width < 980.01px) {
+
+    &__top-menu-list {
+      display: none;
+    }
+
+    &__bottom-menu-list {
+      display: none;
+    }
+  }
+
+  @media screen and (width < 600.01px) {
+
+    &__location {
+      display: none;
     }
   }
 }

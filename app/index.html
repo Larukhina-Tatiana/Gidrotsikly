@@ -19,6 +19,12 @@
     <div class="container">
       <div class="header__top">
         <nav class="header__top-menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+          </button>
           <ul class="header__top-menu-list">
             <li class="header__top-menu-item">
               <a class="header__top-menu-link" href="">Магазины</a>
@@ -32,9 +38,7 @@
           </ul>
         </nav>
         <a class="header__logo" href="index.html">
-          <svg class="header__logo-svg" width="80" height="76" aria-label="icon logo">
-            <use href="./images/icons.svg#logo"></use>
-          </svg>
+          <img class="header__logo__img" src="./images/logo.svg" alt="icon logo">
         </a>
         <div class="header__actions">
           <a class="header__location" href="https://maps.app.goo.gl/QiY53m9x3tJSQiaD9" target="_blank"
@@ -44,29 +48,114 @@
           <ul class="header__user-list">
             <li class="header__user-item">
               <a class="header__user-link" href="">
-                <svg class="header__user-svg" width="24" height="22" aria-label="icon favorite">
-                  <use href="./images/icons.svg#favorite"></use>
-                </svg>
+                <img src="./images/favorite.svg" alt="icon favorite" width="24" height="22">
               </a>
             </li>
             <li class="header__user-item">
               <a class="header__user-link" href="">
-                <svg class="header__user-svg" width="24" height="24" aria-label="icon user">
+                <img src="./images/user.svg" alt="icon user" width="24" height="24">
+                <!-- <svg class="header__user-svg" width="24" height="24" aria-label="icon user">
                   <use href="./images/icons.svg#user"></use>
-                </svg>
+                </svg> -->
               </a>
             </li>
             <li class="header__user-item">
               <a class="header__user-link header__user-link--basket" href="">
-                <svg class="header__user-svg" width="30" height="23" aria-label="icon basket">
+                <img src="./images/basket.svg" alt="icon basket" width="30" height="22">
+                <!-- <svg class="header__user-svg" width="30" height="23" aria-label="icon basket">
                   <use href="./images/icons.svg#basket"></use>
-                </svg>
+                </svg> -->
                 <span>1</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
+
+      <ul class="menu-mobile menu">
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/user.svg" alt="icon user" width="20" height="20">
+            <span>Войти</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/user.svg" alt="icon user" width="20" height="20">
+            <span>Регистрация</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/favorite.svg" alt="icon favorite" width="20" height="18">
+            <span>Избранное</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/basket.svg" alt="icon basket" width="30" height="22">
+            <span>Корзина</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/shops.svg" alt="icon shops">
+            <span>Магазины</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/actions.svg" alt="icon actions">
+            <span>Акции</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/delivery.svg" alt="icon delivery">
+            <span>Доставка и оплата</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Квадроциклы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Катера
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Гидроциклы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Лодки
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Вездеходы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Снегоходы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Двигатели
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Запчасти
+          </a>
+        </li>
+      </ul>
       <ul class="header__bottom-menu-list">
         <li class="header__bottom-menu-item">
           <a class="header__bottom-menu-link" href="">Квадроциклы</a>
@@ -96,6 +185,7 @@
     </div>
 
   </header>
+  <!-- 
   <section class="hero section">
     <div class="container">
       <div class="hero__inner">
@@ -945,7 +1035,8 @@
         <a class="banner__link" href="">
           <picture>
             <source srcset="./images/content/banner.webp 1170w" type="image/webp" sizes="(min-width: 1200px) 1170px">
-            <source srcset="./images/content/banner.jpg 1170w" media="(min-width: 1200px)" sizes="(min-width: 1200px) 1170px">
+            <source srcset="./images/content/banner.jpg 1170w" media="(min-width: 1200px)"
+              sizes="(min-width: 1200px) 1170px">
             <img class="banner__img" src="./images/content/banner.jpg" alt="images">
           </picture>
         </a>
@@ -1160,16 +1251,17 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card1.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card1.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card1.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
-                      <img class="products__card-img" src="./images/content/buy-card1.jpg" alt="BRP Audio-портативная система">
+                      <img class="products__card-img" src="./images/content/buy-card1.jpg"
+                        alt="BRP Audio-портативная система">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">BRP Audio-портативная система</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1180,17 +1272,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card2.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card2.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card2.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
-                      <img class="products__card-img" src="./images/content/buy-card2.jpg" alt="Garmin Echomap Plus 62cv">
+                      <img class="products__card-img" src="./images/content/buy-card2.jpg"
+                        alt="Garmin Echomap Plus 62cv">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Garmin Echomap Plus 62cv
                     </h5>
                     <p class="products__card-price price">45 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1201,18 +1294,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card3.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card3.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card3.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/buy-card3.jpg" alt="
                                             BRP Audio-Premium System">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5" lang="en">RF D.E.S.S.TM Key</h5>
                     <p class="products__card-price price">68 000 &#8372;</p>
-              
-              
+
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1223,16 +1316,16 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card4.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card4.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card4.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/buy-card4.jpg" alt="Мужской костюм 3мм">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Мужской костюм 3мм</h5>
                     <p class="products__card-price price">7 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1243,16 +1336,16 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/products-card1.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card1.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card1.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card1.jpg" alt="">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Водонепроницаемый Рюкзак</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1263,18 +1356,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/products-card2.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card2.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card2.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card2.jpg"
                         alt="Спасательный жилет BRP Men's Airflow PFD">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Спасательный жилет BRP Men's Airflow PFD
                     </h5>
                     <p class="products__card-price price">6 900 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1285,17 +1378,17 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/products-card3.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card3.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card3.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card3.jpg" alt="
                                                             BRP Audio-Premium System">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5" lang="en">BRP Audio-Premium System</h5>
                     <p class="products__card-price price">68 000 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1306,18 +1399,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/products-card4.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card4.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card4.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card4.jpg" alt="Спасательное
                                                             снаряжение">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Спасательное
                       снаряжение</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1332,16 +1425,17 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card1.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card1.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card1.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
-                      <img class="products__card-img" src="./images/content/buy-card1.jpg" alt="BRP Audio-портативная система">
+                      <img class="products__card-img" src="./images/content/buy-card1.jpg"
+                        alt="BRP Audio-портативная система">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">BRP Audio-портативная система</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1352,17 +1446,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card2.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card2.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card2.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
-                      <img class="products__card-img" src="./images/content/buy-card2.jpg" alt="Garmin Echomap Plus 62cv">
+                      <img class="products__card-img" src="./images/content/buy-card2.jpg"
+                        alt="Garmin Echomap Plus 62cv">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Garmin Echomap Plus 62cv
                     </h5>
                     <p class="products__card-price price">45 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1373,18 +1468,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card3.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card3.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card3.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/buy-card3.jpg" alt="
                                             BRP Audio-Premium System">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5" lang="en">RF D.E.S.S.TM Key</h5>
                     <p class="products__card-price price">68 000 &#8372;</p>
-              
-              
+
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1395,16 +1490,16 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/buy-card4.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/buy-card4.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/buy-card4.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/buy-card4.jpg" alt="Мужской костюм 3мм">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Мужской костюм 3мм</h5>
                     <p class="products__card-price price">7 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1415,16 +1510,16 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/products-card1.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card1.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card1.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card1.jpg" alt="">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Водонепроницаемый Рюкзак</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1435,18 +1530,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/products-card2.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card2.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card2.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card2.jpg"
                         alt="Спасательный жилет BRP Men's Airflow PFD">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Спасательный жилет BRP Men's Airflow PFD
                     </h5>
                     <p class="products__card-price price">6 900 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1457,17 +1552,17 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link" href="">
                     <picture>
-                      <source srcset="./images/content/products-card3.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card3.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card3.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card3.jpg" alt="
                                                             BRP Audio-Premium System">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5" lang="en">BRP Audio-Premium System</h5>
                     <p class="products__card-price price">68 000 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1478,18 +1573,18 @@
                   <a class="products__card-notify-link" href=""><span>Сообщить о поступлении</span></a>
                   <a class="products__card-link products__card-link--sale" href="">
                     <picture>
-                      <source srcset="./images/content/products-card4.webp 200w" type="image/webp" media="(min-width: 1200px)"
-                        sizes="(min-width: 1200px) 200px">
+                      <source srcset="./images/content/products-card4.webp 200w" type="image/webp"
+                        media="(min-width: 1200px)" sizes="(min-width: 1200px) 200px">
                       <source srcset="./images/content/products-card4.jpg 870w" media="(min-width: 1200px)"
                         sizes="(min-width: 1200px) 200px">
                       <img class="products__card-img" src="./images/content/products-card4.jpg" alt="Спасательное
                                                             снаряжение">
                     </picture>
-              
+
                     <h5 class="products__card-title title-h5">Спасательное
                       снаряжение</h5>
                     <p class="products__card-price price">9 800 &#8372;</p>
-              
+
                     <p class="products__card-hover">посмотреть товар</p>
                     <p class="products__card-notify">нет в наличии</p>
                   </a>
@@ -1516,7 +1611,7 @@
           <form class="footer__form-mail" name="footer-mail" novalidate>
             <label class="footer__form-mail-label" for="user_email"></label>
             <input class="footer__form-mail-input" type="email" name="email" id="user_email"
-              placeholder="Введите ваш e-mail:" required >
+              placeholder="Введите ваш e-mail:" required>
             <button class="footer__form-mail-button" type="submit">Отправить</button>
           </form>
         </div>
@@ -1566,7 +1661,7 @@
                 </svg>
               </a>
             </li>
-        
+
             <li class="social-list__ltem">
               <a class="social-list__link" href="" aria-label="Whatsapp Link">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
@@ -1656,6 +1751,7 @@
     </div>
 
   </footer>
+  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="libs/slick/slick.min.js"></script>
