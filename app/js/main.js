@@ -9,6 +9,10 @@ $(".menu__btn").on("click", function () {
   $(".menu__btn").toggleClass("menu-open");
 });
 
+if ($(window).width() < 980) {
+  $(".header__top-menu-list").appendTo($(".menu-mobile__wrapper"));
+}
+
 $(function () {
   $(".hero__slider").slick({
     dots: true,

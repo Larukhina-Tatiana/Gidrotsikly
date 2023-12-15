@@ -9,7 +9,7 @@
 
     &-menu-list {
       display: flex;
-      @include adaptivevalue(gap, 50, 15, 1200, 840, 1);
+      @include adaptivevalue(gap, 50, 15, 1200, 320, 1);
     }
 
     &-menu-link {
@@ -129,9 +129,9 @@
 
   @media screen and (width < 980.01px) {
 
-    &__top-menu-list {
-      display: none;
-    }
+    // &__top-menu-list {
+    //   display: none;
+    // }
 
     &__bottom-menu-list {
       display: none;
