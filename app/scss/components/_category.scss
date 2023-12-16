@@ -19,8 +19,9 @@
     @media (any-hover: hover) {
       &:hover {
         box-shadow: 3px 3px 20px 0px rgba(50, 50, 50, 0.25);
-            border: 1px solid #fff;
+        border: 1px solid #fff;
       }
+
       &:hover .category__title {
         color: var(--accent);
       }
@@ -58,6 +59,26 @@
     text-align: center;
     width: 50%;
     // object-fit: cover;
+  }
 
+  @media screen and (width < 1024.01px) {
+    &__list {
+      justify-content: space-around;
+    }
+
+    &__link {
+      gap: rem(30);
+    }
+
+    &__item {
+      // flex-basis: calc((100% - 60px) / 3)
+      flex-basis: rem(288);
+    }
+  }
+
+  @media screen and (width < 440.01px) {
+    &__item {
+      padding: rem(7) rem(10) rem(16);
+    }
   }
 }

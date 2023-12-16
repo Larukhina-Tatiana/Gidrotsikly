@@ -860,6 +860,22 @@ ul > .slick-active button {
   text-align: center;
   width: 50%;
 }
+@media screen and (width < 1024.01px) {
+  .category__list {
+    justify-content: space-around;
+  }
+  .category__link {
+    gap: 1.875rem;
+  }
+  .category__item {
+    flex-basis: 18rem;
+  }
+}
+@media screen and (width < 440.01px) {
+  .category__item {
+    padding: 0.4375rem 0.625rem 1rem;
+  }
+}
 
 .products {
   padding-bottom: 5rem;
