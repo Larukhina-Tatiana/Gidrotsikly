@@ -19,9 +19,17 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     nextArrow:
-      '<button type="button" class="hero__slider-arrow hero__slider-arrow-next"><svg class="hero__slider-svg" width="15" height="28" aria-label="next arrow"><use href="./images/icons.svg#next"></use></svg></button> ',
+      '<button type="button" class="hero__slider-arrow hero__slider-arrow-next"><img src="./images/next.svg" alt="next arrow"  width="15" height="28"></button> ',
     prevArrow:
-      '<button type="button" class="hero__slider-arrow hero__slider-arrow-prev"><svg class="hero__slider-svg" width="15" height="28" aria-label="prev arrow"><use href="./images/icons.svg#prev"></use></svg></button> ',
+      '<button type="button" class="hero__slider-arrow hero__slider-arrow-prev"><img src="./images/prev.svg" alt="prev arrow"  width="15" height="28"></button> ',
+    responsive: [
+      {
+        breakpoint: 881,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 });
 
