@@ -58,13 +58,46 @@ $(".products__card-favorite").on("click", function () {
 
 $(function () {
   $(".products__slider").slick({
-    //     dots: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow:
-      '<button type="button" class="products__slider-arrow products__slider-arrow-next"><svg class="products__slider-svg" width="15" height="28" aria-label="next arrow"><use href="./images/icons.svg#next"></use></svg></button> ',
+      '<button type="button" class="products__slider-arrow products__slider-arrow-next"><img src="./images/next-black.svg" alt="next arrow"  width="15" height="28"></button> ',
     prevArrow:
-      '<button type="button" class="products__slider-arrow products__slider-arrow-prev"><svg class="products__slider-svg" width="15" height="28" aria-label="prev arrow"><use href="./images/icons.svg#prev"></use></svg></button> ',
+      '<button type="button" class="products__slider-arrow products__slider-arrow-prev"><img src="./images/prev-black.svg" alt="prev arrow"  width="15" height="28"></button> ',
+    responsive: [
+      {
+        breakpoint: 1241,
+        settings: {
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
   });
 });
 

@@ -74,16 +74,7 @@
     }
   }
 
-  @media screen and (width < 720.01px) {
-    .tabs-wrapper {
-      overflow-x: scroll;
-    }
 
-    .mobile-overflow {
-      width: rem(1000);
-    }
-
-  }
 
   @media screen and (width < 600.01px) {
     &__content-form {

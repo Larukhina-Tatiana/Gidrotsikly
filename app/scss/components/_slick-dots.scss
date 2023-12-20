@@ -1,12 +1,11 @@
 .slick-dots {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: rem(40);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: rem(9);
+  left: 50%;
+  transform: translateX(-50%);
+
 
   & button {
     font-size: 0;
@@ -16,22 +15,14 @@
     border-radius: 50%;
     border: 1px solid var(--white);
   }
+}
 
-  // @media screen and (width < 551px) {
-  //   gap: 20px;
-  // }
-
-  // @media screen and (width < 376px) {
-  //   gap: 5px;
-
-  //   & button {
-  //     width: 4px;
-  //     height: 4px;
-  //   }
-  // }
+.hero__slider .slick-dots {
+  bottom: rem(60);
+  gap: rem(9);
 }
 
 
- ul>.slick-active button {
+ul > .slick-active button {
   background-color: var(--white);
 }

@@ -4,6 +4,10 @@
   // @include adaptivevalue(font-size, 48, 28, 1440, 320, 1);
   font-size: rem(25);
   margin-bottom: rem(25);
+
+  @media screen and (width < 690.01px) {
+    text-align: center;
+  }
 }
 
 // .subtitle-h3 {

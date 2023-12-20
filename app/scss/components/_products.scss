@@ -1,10 +1,15 @@
 .products {
   padding-bottom: rem(80);
 
+  & .container {
+    max-width: rem(1241);
+  }
+
+  &__inner {
+    margin: 0 auto;
+  }
+
   &__slider {
-    &-svg {
-      color: var(--main-taxt);
-    }
 
     &-arrow {
       position: absolute;
@@ -13,11 +18,11 @@
       z-index: 2;
 
       &-next {
-        right: rem(-20);
+        right: rem(-18);
       }
 
       &-prev {
-        left: rem(-40);
+        left: rem(-18);
       }
 
       @include transition ($transition-property: color);
@@ -28,15 +33,22 @@
         }
       }
     }
+
   }
 
   &__tabs {
     gap: 50px;
     margin-bottom: rem(25);
 
-    &-link.tabs__link--active {
+
+    &-link.tabs__link--active.tabs__link {
       border-bottom: rem(2) solid var(--accent);
+      font-weight: 500;
     }
+  }
+
+  &__tabs-link.tabs__link {
+    font-weight: 400;
   }
 
 
@@ -48,11 +60,12 @@
     text-align: center;
     padding: rem(52) rem(20) rem(31);
     // width: calc((100% - 90px) / 4);
-    width: rem(270);
+    width: rem(271);
     height: rem(403);
     position: relative;
     @include transition ($transition-property: all);
-    margin-right: rem(30);
+    margin-right: rem(15);
+    margin-left: rem(15);
 
 
 
@@ -172,7 +185,6 @@
     &-notify {
       display: none;
       padding-bottom: rem(20);
-      // color: var(--main-text);
       font-size: rem(18);
       font-weight: 700;
     }
@@ -198,13 +210,15 @@
   }
 
   &__link-more {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: rem(15);
     letter-spacing: .12em;
     text-transform: uppercase;
     background-color: var(--background);
     width: rem(252);
-    height: re(50);
+    height: rem(50);
     padding: rem(10);
     margin: rem(35) auto rem(0) auto;
     @include transition ($transition-property: (background-color, color));
@@ -216,6 +230,13 @@
       }
     }
   }
+
+  @media screen and (width < 1240.01px) {
+    &__link-more {
+      margin-top: rem(60);
+    }
+  }
+
 }
 
 .products__card.products__card-not-available .products__card-price {
@@ -238,4 +259,35 @@
 
 .products__card.products__card-not-available .products__card-basket {
   display: none;
+}
+
+@media screen and (width < 1240.01px) {
+  .products__slider .slick-dots {
+    bottom: rem(-10);
+    gap: rem(20);
+  }
+
+  .products__slider .slick-dots button {
+    font-size: 0;
+    width: rem(14);
+    height: rem(14);
+    background-color: var(--gray);
+    border-radius: 50%;
+    border: none;
+  }
+
+  .products__slider.slick-slider .slick-track,
+  .slick-slider .slick-list {
+    padding-bottom: 20px;
+  }
+
+  .products__slider .slick-dots .slick-active button {
+    background-color: var(--accent);
+  }
+
+  .products__slider.slick-dots button {
+    bottom: rem(-20);
+  }
+
+
 }

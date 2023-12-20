@@ -126,6 +126,17 @@ button,
     @include adaptivevalue(padding-top, 80, 25, 1200, 320, 1);
 }
 
+@media screen and (width < 720.01px) {
+    .tabs-wrapper {
+        overflow-x: scroll;
+    }
+
+    .mobile-overflow {
+        width: rem(1000);
+    }
+
+}
+
 
 
 // .footer {

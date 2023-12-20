@@ -442,30 +442,32 @@
       </div>
     </section>
 
-    <!-- 
+
     <section class="products section">
       <div class="container">
         <h2 class="product-title title-h2">Популярные товары</h2>
         <div class="products__inner">
-          <ul class="tabs products__tabs">
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link  products__tabs-link tabs__link--active" href="#products-tab1">запчасти</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#products-tab2">моторы</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#products-tab3">шины</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#products-tab4">электроника</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#products-tab5">инструменты</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#products-tab6">аксессуары</a>
-            </li>
+          <ul class="products__tabs tabs-wrapper">
+            <div class="mobile-overflow">
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link  products__tabs-link tabs__link--active" href="#products-tab1">запчасти</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#products-tab2">моторы</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#products-tab3">шины</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#products-tab4">электроника</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#products-tab5">инструменты</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#products-tab6">аксессуары</a>
+              </li>
+            </div>
           </ul>
           <ul class="tabs__container products__container">
             <li id="products-tab1" class="tabs__content tabs__content--active products__content">
@@ -653,7 +655,6 @@
                   </a>
                 </li>
               </ul>
-
             </li>
 
             <li id="products-tab2" class="tabs__content products__content">
@@ -1034,42 +1035,52 @@
         <a class="products__link-more" href="">Показать еще</a>
       </div>
     </section>
+
     <div class="banner">
       <div class="container">
         <a class="banner__link" href="">
           <picture>
-            <source srcset="./images/content/banner.webp 1170w" type="image/webp" sizes="(min-width: 1200px) 1170px">
-            <source srcset="./images/content/banner.jpg 1170w" media="(min-width: 1200px)"
-              sizes="(min-width: 1200px) 1170px">
-            <img class="banner__img" src="./images/content/banner.jpg" alt="images">
+            <source srcset="./images/content/banner.webp 1170w" type="image/webp" media="(min-width: 560px)"
+              sizes="(min-width: 560px) 1170px, (min-width: 320px) 300px">
+            <source srcset="./images/content/banner.jpg 1170w" media="(min-width: 560px)"
+              sizes="(min-width: 560px) 1170px, (min-width: 320px) 300px">
+            <source srcset="./images/content/banner-mob.webp 300w" type="image/webp" sizes="(min-width: 320px) 300px"
+              media="(min-width: 320px)">
+            <source srcset="./images/content/banner-mob.jpg 300w" media="(min-width: 320px)"
+              sizes="(min-width: 560px) 1170px, (min-width: 320px) 300px">
+            <img class="banner__img" src="./images/content/banner-mob.jpg" alt="images"
+              sizes="(min-width: 560px) 1170px, (min-width: 320px) 300px">
           </picture>
         </a>
       </div>
     </div>
 
+
     <section class="products section">
       <div class="container">
         <h2 class="buy-title title-h2">С этим товаром покупают</h2>
         <div class="products__inner">
-          <ul class="tabs products__tabs">
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link  products__tabs-link tabs__link--active" href="#buy-tab1">запчасти</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#buy-tab2">моторы</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#buy-tab3">шины</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#buy-tab4">электроника</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#buy-tab5">инструменты</a>
-            </li>
-            <li class="tabs__item products__tabs-item">
-              <a class="tabs__link products__tabs-link" href="#buy-tab6">аксессуары</a>
-            </li>
+          <ul class="products__tabs tabs-wrapper">
+            <div class="mobile-overflow">
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link  products__tabs-link tabs__link--active" href="#buy-tab1">запчасти</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#buy-tab2">моторы</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#buy-tab3">шины</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#buy-tab4">электроника</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#buy-tab5">инструменты</a>
+              </li>
+              <li class="tabs tabs__item products__tabs-item">
+                <a class="tabs__link products__tabs-link" href="#buy-tab6">аксессуары</a>
+              </li>
+            </div>
           </ul>
           <ul class="tabs__container products__container">
             <li id="buy-tab1" class="tabs__content tabs__content--active products__content">
@@ -1605,6 +1616,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="footer__top">
@@ -1755,16 +1767,16 @@
     </div>
 
   </footer>
-  -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="libs/slick/slick.min.js"></script>
-    <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
 
-    <script src="js/jquery.formstyler.min.js"></script>
-    <script src="js/ion.rangeSlider.min.js"></script>
-    <script src="js/jquery.rateyo.min.js"></script>
-    <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
+  <script src="libs/mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
+  <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
