@@ -6,22 +6,26 @@
   &__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: rem(46);
+    align-items: flex-start;
+    @include adaptivevalue(margin-bottom, 46, 80, 1200, 320, 1);
     gap: rem(10);
   }
 
   &__form {
     &-inner {
-      max-width: rem(294);
-      margin-right: 59px;
+      @include adaptivevalue(max-width, 294, 600, 1200, 320, 1);
+      // max-width: rem(294);
+
+      @media screen and (min-width: 804.01px) {
+        margin-right: 59px;
+      }
     }
 
     &-text {
       max-width: rem(222);
       font-size: rem(14);
       font-weight: 700;
-      @include adaptivevalue(margin-bottom, 40, 20, 1200, 320, 1);
+      margin-bottom: rem(40);
     }
 
     &-mail {
@@ -33,8 +37,9 @@
         padding: rem(8) rem(12);
         font-size: rem(14);
         border: none;
+
         ::placeholder {
-        color: var(--gray);
+          color: var(--gray);
         }
       }
 
@@ -71,13 +76,88 @@
   &__bottom {
     display: flex;
     justify-content: center;
-    @include adaptivevalue(gap, 80, 12, 1200, 320, 1);
+    gap: 0 rem(80);
 
 
     &-link {
       color: #48494D;
-        font-size: rem(10);
+      font-size: rem(10);
     }
   }
 
+
+  @media screen and (width < 980.01px) {
+    &__top {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (width < 804.01px) {
+    &__top {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__form-inner {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: rem(40);
+    }
+
+    &__form-text {
+      margin: 0 auto rem(20) auto;
+    }
+
+    &__form-mail-input {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__info {
+      border-top: 2px solid #F9F9FC;
+      border-bottom: 2px solid #F9F9FC;
+      width: 100%;
+      margin: 0;
+    }
+
+    &__info--nobottom {
+      border-bottom: none;
+    }
+
+    &__top-title {
+      padding: rem(15) 0;
+      font-weight: 500;
+      line-height: rem(18);
+      color: #7F7F7F;
+      letter-spacing: rem(-0.086);
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: url(../images/arrow-footer.svg);
+        width: rem(6);
+        height: rem(12);
+        top: 50%;
+        transform: translateY(-50%);
+        right: rem(13);
+        @include transition ($transition-property: all);
+      }
+    }
+
+    &__top-title--active::after {
+      transform: rotate(180deg);
+      right: rem(6.5);
+    }
+
+    &__info-list {
+      display: none;
+      padding-bottom: rem(15);
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: rem(12);
+    }
+  }
 }

@@ -132,6 +132,13 @@ $(".rate-yo").rateYo({
   spacing: "7px",
   normalFill: "#C4C4C4",
 });
+
+// открытие-закрытие заголовков footer__info-list
+$(".footer__top-title").on("click", function () {
+  $(this).next().slideToggle();
+  $(this).toggleClass("footer__top-title--active");
+});
+
 // var mixer = mixitup(".portfolio__box", {
 //   load: {
 //     filter: ".branding",

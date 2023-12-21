@@ -19,6 +19,12 @@
     <div class="container">
       <div class="header__top">
         <nav class="header__top-menu">
+          <button class="menu__btn">
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+            <span class="menu__btn-line"></span>
+          </button>
           <ul class="header__top-menu-list">
             <li class="header__top-menu-item">
               <a class="header__top-menu-link" href="">Магазины</a>
@@ -32,9 +38,7 @@
           </ul>
         </nav>
         <a class="header__logo" href="index.html">
-          <svg class="header__logo-svg" width="80" height="76" aria-label="icon logo">
-            <use href="./images/icons.svg#logo"></use>
-          </svg>
+          <img class="header__logo__img" src="./images/logo.svg" alt="icon logo">
         </a>
         <div class="header__actions">
           <a class="header__location" href="https://maps.app.goo.gl/QiY53m9x3tJSQiaD9" target="_blank"
@@ -44,29 +48,115 @@
           <ul class="header__user-list">
             <li class="header__user-item">
               <a class="header__user-link" href="">
-                <svg class="header__user-svg" width="24" height="22" aria-label="icon favorite">
-                  <use href="./images/icons.svg#favorite"></use>
-                </svg>
+                <img src="./images/favorite.svg" alt="icon favorite" width="24" height="22">
               </a>
             </li>
             <li class="header__user-item">
               <a class="header__user-link" href="">
-                <svg class="header__user-svg" width="24" height="24" aria-label="icon user">
-                  <use href="./images/icons.svg#user"></use>
-                </svg>
+                <img src="./images/user.svg" alt="icon user" width="24" height="24">
+                <!-- <svg class="header__user-svg" width="24" height="24" aria-label="icon user">
+                    <use href="./images/icons.svg#user"></use>
+                  </svg> -->
               </a>
             </li>
             <li class="header__user-item">
               <a class="header__user-link header__user-link--basket" href="">
-                <svg class="header__user-svg" width="30" height="23" aria-label="icon basket">
-                  <use href="./images/icons.svg#basket"></use>
-                </svg>
+                <img src="./images/basket.svg" alt="icon basket" width="30" height="22">
+                <!-- <svg class="header__user-svg" width="30" height="23" aria-label="icon basket">
+                    <use href="./images/icons.svg#basket"></use>
+                  </svg> -->
                 <span>1</span>
               </a>
             </li>
           </ul>
         </div>
       </div>
+
+      <ul class="menu-mobile menu">
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/user.svg" alt="icon user" width="20" height="20">
+            <span>Войти</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/user.svg" alt="icon user" width="20" height="20">
+            <span>Регистрация</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/favorite.svg" alt="icon favorite" width="20" height="18">
+            <span>Избранное</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/basket.svg" alt="icon basket" width="30" height="22">
+            <span>Корзина</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/shops.svg" alt="icon shops">
+            <span>Магазины</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/actions.svg" alt="icon actions">
+            <span>Акции</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            <img class="menu-mobile__img" src="./images/delivery.svg" alt="icon delivery">
+            <span>Доставка и оплата</span>
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Квадроциклы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Катера
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="catalog.html">
+            Гидроциклы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Лодки
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Вездеходы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Снегоходы
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Двигатели
+          </a>
+        </li>
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="">
+            Запчасти
+          </a>
+        </li>
+      </ul>
+      <div class="menu-mobile__wrapper"></div>
       <ul class="header__bottom-menu-list">
         <li class="header__bottom-menu-item">
           <a class="header__bottom-menu-link" href="">Квадроциклы</a>
@@ -75,7 +165,7 @@
           <a class="header__bottom-menu-link" href="">Катера</a>
         </li>
         <li class="header__bottom-menu-item">
-          <a class="header__bottom-menu-link" href="">Гидроциклы</a>
+          <a class="header__bottom-menu-link" href="catalog.html">Гидроциклы</a>
         </li>
         <li class="header__bottom-menu-item">
           <a class="header__bottom-menu-link" href="">Лодки</a>
@@ -371,7 +461,8 @@
                       </div>
                     </li>
                     <li class="aside__form-item-drop aside__form-item-btn">
-                      <button class="aside__form-filter-btn-send aside__form-filter-btn-send--active" type="submit">ВЫБРАТЬ</button>
+                      <button class="aside__form-filter-btn-send aside__form-filter-btn-send--active"
+                        type="submit">ВЫБРАТЬ</button>
                       <p class="aside__form-filter-btn-extra">Дополнительные параметры</p>
                       <div class="aside__form-filter-btn-extra-content">more</div>
                       <button class="aside__form-filter-btn-reset" type="submit">Сбросить фильтр</button>
@@ -698,8 +789,8 @@
           </form>
         </div>
 
-        <div class="footer__info">
-          <h6 class="title-h6">Информация</h6>
+        <div class="footer__info footer__info--nobottom">
+          <h6 class="title-h6 footer__top-title">Информация</h6>
           <ul class="footer__info-list">
             <li class="footer__info-item">
               <a class="footer__info-link" href="">О компании</a>
@@ -717,7 +808,7 @@
         </div>
 
         <div class="footer__info">
-          <h6 class="title-h6">Интернет-магазин</h6>
+          <h6 class="title-h6 footer__top-title">Интернет-магазин</h6>
           <ul class="footer__info-list">
             <li class="footer__info-item">
               <a class="footer__info-link" href="">Доставка и самовывоз</a>
@@ -733,13 +824,30 @@
             </li>
           </ul>
         </div>
-        <address class="social">
+
+        <address class="social social--margin">
           <ul class="social-list">
             <li class="social-list__ltem">
               <a class="social-list__link" href="" aria-label="Instagram Link">
-                <svg width="30" height="30">
-                  <use href="./images/icons.svg#instagram"></use>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                  <g clip-path="url(#clip0_58_1)">
+                    <path
+                      d="M15.0046 7.29749C10.7509 7.29749 7.30713 10.745 7.30713 14.995C7.30713 19.2487 10.7546 22.6925 15.0046 22.6925C19.2584 22.6925 22.7021 19.245 22.7021 14.995C22.7021 10.7412 19.2546 7.29749 15.0046 7.29749ZM15.0046 19.9912C12.2434 19.9912 10.0084 17.755 10.0084 14.995C10.0084 12.235 12.2446 9.99874 15.0046 9.99874C17.7646 9.99874 20.0009 12.235 20.0009 14.995C20.0021 17.755 17.7659 19.9912 15.0046 19.9912Z"
+                      fill="#2F3035" />
+                    <path
+                      d="M21.1848 0.095454C18.4248 -0.033296 11.5885 -0.027046 8.82605 0.095454C6.39855 0.209204 4.2573 0.795454 2.53105 2.5217C-0.353954 5.4067 0.0147958 9.29421 0.0147958 14.9955C0.0147958 20.8305 -0.310204 24.628 2.53105 27.4692C5.4273 30.3642 9.37104 29.9855 15.0048 29.9855C20.7848 29.9855 22.7798 29.9892 24.8235 29.198C27.6023 28.1192 29.6998 25.6355 29.9048 21.1742C30.0348 18.413 30.0273 11.578 29.9048 8.81546C29.6573 3.5492 26.831 0.355454 21.1848 0.095454ZM25.5535 25.5605C23.6623 27.4517 21.0385 27.283 14.9685 27.283C8.71854 27.283 6.2123 27.3755 4.38355 25.5417C2.2773 23.4455 2.65855 20.0792 2.65855 14.9755C2.65855 8.0692 1.9498 3.09545 8.88105 2.74045C10.4735 2.6842 10.9423 2.66545 14.951 2.66545L15.0073 2.70295C21.6685 2.70295 26.8948 2.00545 27.2085 8.93545C27.2798 10.5167 27.296 10.9917 27.296 14.9942C27.2948 21.1717 27.4123 23.693 25.5535 25.5605Z"
+                      fill="#2F3035" />
+                    <path
+                      d="M23.0077 8.79245C24.0012 8.79245 24.8065 7.98712 24.8065 6.9937C24.8065 6.00027 24.0012 5.19495 23.0077 5.19495C22.0143 5.19495 21.209 6.00027 21.209 6.9937C21.209 7.98712 22.0143 8.79245 23.0077 8.79245Z"
+                      fill="#2F3035" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_58_1">
+                      <rect width="30" height="30" fill="white" />
+                    </clipPath>
+                  </defs>
                 </svg>
+                <!-- <img src="./images/instagram.svg" alt="Instagram Link" width="30" height="30"> -->
               </a>
             </li>
 
@@ -830,7 +938,6 @@
         </li>
       </ul>
     </div>
-
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

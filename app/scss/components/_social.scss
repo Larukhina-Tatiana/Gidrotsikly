@@ -1,8 +1,16 @@
 .social {
+  align-self: center;
 
   &-list {
     display: flex;
     gap: rem(30);
+  }
+
+  @media screen and (width < 980.01px) {
     align-items: center;
+
+    &--margin {
+      margin-top: rem(40);
+    }
   }
 }
