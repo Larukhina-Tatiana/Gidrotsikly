@@ -59,13 +59,13 @@
     border: rem(1) solid var(--border);
     text-align: center;
     padding: rem(52) rem(20) rem(31);
-    // width: calc((100% - 90px) / 4);
+    // flex-basis: calc((100% - 60px) / 3);
     width: rem(271);
-    height: rem(403);
+    // height: rem(403);
     position: relative;
     @include transition ($transition-property: all);
-    margin-right: rem(15);
-    margin-left: rem(15);
+    // margin-right: rem(15);
+    // margin-left: rem(15);
 
 
 
@@ -288,6 +288,15 @@
   .products__slider.slick-dots button {
     bottom: rem(-20);
   }
+}
 
+@media screen and (width < 440.01px) {
+  .products__slider .slick-dots {
+    bottom: rem(40);
+  }
 
+  .products__slider.slick-slider .slick-track,
+  .slick-slider .slick-list {
+    padding-bottom: 0;
+  }
 }

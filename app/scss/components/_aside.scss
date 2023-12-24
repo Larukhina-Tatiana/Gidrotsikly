@@ -23,7 +23,6 @@
           display: inline-block;
           padding-bottom: rem(7);
           border-bottom: rem(2) solid var(--accent);
-
         }
       }
     }
@@ -147,12 +146,12 @@
       margin-bottom: rem(15);
 
       &::after {
-            position: absolute;
-            content: url(../images/drop-arrow.svg);
-            width: rem(12);
-            height: rem(8);
-            right: rem(0);
-            cursor: pointer;
+        position: absolute;
+        content: url(../images/drop-arrow.svg);
+        width: rem(12);
+        height: rem(8);
+        right: rem(0);
+        cursor: pointer;
       }
 
       &.title-form--active {
@@ -172,10 +171,39 @@
       color: var(--gray);
       border-bottom: 1px solid var(--gray);
     }
-
-        
   }
 
+  &__btn {
+    display: none;
+  }
+
+  @media screen and (width < 790.01px) {
+    width: rem(320);
+
+    &__btn {
+      display: block;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      padding: rem(15) 0;
+      margin-bottom: rem(30);
+      cursor: pointer;
+      background-color: var(--accent);
+      color: var(--white);
+      border-radius: 5px;
+    }
+  }
+
+  @media screen and (width < 440.01px) {
+    &__form-list {
+      width: 93%;
+    }
+
+    &__form-item-list {
+      width: 96%;
+    }
+  }
 }
 
 
@@ -315,6 +343,7 @@
 
   height: rem(20);
   padding: 0 rem(40) 0 rem(10);
+  @include adaptivevalue(padding-right, 40, 10, 1200, 320, 1);
 
   color: var(--main-text);
   font: rem(14)/rem(17) Barlow, sans-serif;
@@ -349,7 +378,8 @@
   height: rem(8);
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  @include adaptivevalue(left, 0, 28, 1200, 320, 1);
+  // left: rem(28);
   cursor: pointer;
 }
 
@@ -405,5 +435,17 @@
   .jq-checkbox.checked .jq-checkbox__div {
     display: none;
   }
+}
 
+
+
+@media screen and (width < 440.01px) {
+  // .aside__form-options-item .jq-selectbox__trigger-arrow {
+  //   left: rem(-20);
+  // }
+
+  .jq-selectbox__dropdown {
+    width: 120%;
+    left: rem(-5);
+  }
 }

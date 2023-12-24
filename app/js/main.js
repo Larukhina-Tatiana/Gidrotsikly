@@ -139,6 +139,12 @@ $(".footer__top-title").on("click", function () {
   $(this).toggleClass("footer__top-title--active");
 });
 
+// Фильтр Aside
+$(".aside__btn").on("click", function () {
+  $(this).next().slideToggle();
+  // $(this).toggleClass("footer__top-title--active");
+});
+
 // var mixer = mixitup(".portfolio__box", {
 //   load: {
 //     filter: ".branding",

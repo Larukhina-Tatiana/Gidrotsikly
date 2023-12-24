@@ -95,6 +95,22 @@
     }
   }
 
+  &-mobile__location {
+    display: block;
+    padding: rem(65) rem(10) rem(136) rem(44);
+    color: var(--main-text);
+    font-weight: 700;
+    width: rem(180);
+
+    &.header__location {
+      margin-right: 0;
+    }
+
+    &.header__location::before {
+      display: none;
+    }
+  }
+
   &-mobile__img {
     position: absolute;
     left: rem(11);

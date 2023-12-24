@@ -1,6 +1,9 @@
 .catalog {
-  // @include adaptivevalue(padding-top, 40, 58, 1200, 320,1);
   @include adaptivevalue(padding-bottom, 100, 40, 1200, 320, 1);
+
+  & .products {
+    display: none;
+  }
 
   &__filter {
     display: flex;
@@ -8,11 +11,11 @@
     align-items: center;
     @include adaptivevalue(margin-bottom, 50, 40, 1200, 320, 1);
 
-    &-list {
-      display: flex;
-      align-items: center;
-      gap: rem(8);
-    }
+    // &-list {
+    //   display: flex;
+    //   align-items: center;
+    //   gap: rem(8);
+    // }
 
     &-btn {
       padding: rem(5) rem(22);
@@ -29,6 +32,7 @@
 
     &-button {
       opacity: .3;
+
       &--active {
         opacity: 1;
       }
@@ -56,20 +60,26 @@
   }
 
   &__aside {
-    min-width: rem(290);
+    min-width: rem(291);
     margin-right: rem(10);
+    @include transition ($transition-property: all);
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: rem(30) 0;
+    gap: rem(30) rem(3);
     margin-bottom: rem(70);
 
     & .products__card {
       margin-right: 0;
     }
+  }
+
+  &__filter-item {
+    display: inline-block;
+    margin-right: rem(8);
   }
 
   &__pagination {
@@ -93,6 +103,41 @@
 
   }
 
+  @media screen and (width < 790.01px) {
+    &__inner {
+      display: block;
+    }
+
+    &__aside {
+      display: none;
+    }
+  }
+
+  @media screen and (width < 770.01px) {
+    &__view {
+      gap: rem(20);
+    }
+
+    &__filter {
+      display: block;
+    }
+  }
+
+  @media screen and (width < 440.01px) {
+
+    & .products {
+      display: block;
+    }
+
+    &__filter-inner {
+      overflow-x: scroll;
+    }
+
+    &__pagination {
+      gap: rem(2);
+    }
+  }
+
 }
 
 .filter-style.select-item {
@@ -101,4 +146,14 @@
   @extend %SFProDisplay-400;
   font-size: rem(14);
   border: 1.5px solid #D7D9DF;
+
+  @media screen and (width < 770.01px) {
+    margin: rem(15) 0;
+  }
+
+  @media screen and (width < 440.01px) {
+    padding: rem(5);
+  }
+
+
 }
