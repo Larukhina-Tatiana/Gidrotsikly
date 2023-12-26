@@ -1167,7 +1167,7 @@ ul > .slick-active button {
   margin-right: 3.125rem;
 }
 .tabs__overflow {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 .tabs__content-item {
   display: none;
@@ -1188,6 +1188,11 @@ ul > .slick-active button {
 @media (any-hover: hover) {
   .tabs__link:hover {
     color: var(--accent);
+  }
+}
+@media screen and (width < 770.01px) {
+  .tabs__overflow {
+    overflow-x: scroll;
   }
 }
 
