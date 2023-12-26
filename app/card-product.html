@@ -245,23 +245,22 @@
               </a>
             </div>
 
-            <div class="tabs-wrapper card-product__product-tabs">
-              <ul class="tabs products__tabs">
-                <li class="tabs__item products__tabs-item">
-                  <a class="tabs__link products__tabs-link card-product__product-tabs-link tabs__link--active"
-                    href="#product-1">
-                    Характеристики
-                  </a>
-                </li>
+            <div class="card-product__product-tabs">
+              <div class="tabs products__tabs tabs-wrapper">
 
-                <li class="tabs__item products__tabs-item">
-                  <a class="tabs__link products__tabs-link card-product__product-tabs-link" href="#product-2">
-                    Наличие в магазине
-                  </a>
-                </li>
-              </ul>
-              <ul class="tabs__container products__container">
-                <li id="product-1" class="tabs__content tabs__content--active products__content">
+                <a class="tabs__link products__tabs-link card-product__product-tabs-link tabs__link--active"
+                  href="#product-1">
+                  Характеристики
+                </a>
+
+
+                <a class="tabs__link products__tabs-link card-product__product-tabs-link" href="#product-2">
+                  Наличие в магазине
+                </a>
+
+              </div>
+              <ul class="tabs__content products__container">
+                <li id="product-1" class="tabs__content-item tabs__content--active products__content">
                   <dl class="card-product__list">
                     <div class="card-product__list-desc">
                       <dt>Производитель</dt>
@@ -286,7 +285,7 @@
                   </dl>
                   <a class="aside__form-filter-more-btn card-product__more" href="">Показать еще</a>
                 </li>
-                <li id="product-2" class="tabs__content products__content">
+                <li id="product-2" class="tabs__content-item products__content">
                   Content2
                 </li>
 
