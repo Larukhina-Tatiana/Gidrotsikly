@@ -2,10 +2,6 @@
   display: inline-block;
   margin-right: rem(50);
 
-  &__overflow {
-    overflow-x: scroll;
-  }
-
   &__content-item {
     display: none;
   }
@@ -29,9 +25,12 @@
       }
     }
 
+  }
 
-
-
+  @media screen and (width < 770.01px) {
+    &__overflow {
+      overflow-x: scroll;
+    }
   }
 }
 
