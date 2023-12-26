@@ -114,6 +114,10 @@
   }
 
   @media screen and (width < 770.01px) {
+    & .products {
+      display: block;
+    }
+
     &__view {
       gap: rem(20);
     }
@@ -124,11 +128,6 @@
   }
 
   @media screen and (width < 440.01px) {
-
-    & .products {
-      display: block;
-    }
-
     &__filter-inner {
       overflow-x: scroll;
     }

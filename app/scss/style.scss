@@ -1,6 +1,5 @@
 @use 'sass:math';
 
-
 @import "./utils/modern-normalize.min";
 
 @import "./utils/_fonts";
@@ -16,6 +15,8 @@
 @import "./components/_search";
 @import "./components/category";
 @import "./components/_products";
+@import "./components/_banner";
+
 @import "./components/_tabs";
 @import "./components/_social";
 @import "./components/_footer";
@@ -29,8 +30,7 @@
 @import "./components/_btn-buy";
 @import "./components/_form-topline";
 @import "./components/menu";
-// @import "./components/_contact";
-// @import "./components/_clients";
+
 
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
 //                     <use href="./images/projects/icons.svg#icon-search"></use>

@@ -7,11 +7,8 @@
   }
 
   &__input-search {
-    @media screen and (min-width: 480px) and (max-width: 1920px) {
-      margin-left: rem(18);
-      margin-right: rem(100);
-    }
-
+    @include adaptivevalue(margin-left, 18, 5, 1200, 320, 1);
+    @include adaptivevalue(margin-right, 100, 25, 1200, 1054, 1);
     padding: rem(9) rem(37) rem(9) rem(17);
     border-radius: rem(3);
     background: var(--background);
@@ -85,6 +82,38 @@
     padding: rem(10) rem(40);
     font-size: rem(13);
     letter-spacing: .12em;
+  }
+
+  @media screen and (width < 996.01px) {
+    label {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: rem(25);
+    }
+
+    &__item.form-topline__item--title {
+      display: none;
+    }
+
+    &__item {
+      display: block;
+
+      div {
+        margin-bottom: rem(15);
+      }
+    }
+
+  }
+
+  @media screen and (width < 440.01px) {
+    &__input-search {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: rem(20);
+      width: rem(290);
+    }
   }
 
 }

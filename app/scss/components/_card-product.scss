@@ -144,9 +144,55 @@
     opacity: 1;
   }
 
+  @media screen and (width < 1054.01px) {
+    &__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    &__product-tabs {
+      display: none;
+    }
+
+    &__content {
+      order: -1;
+    }
+
+    &__box &__btn-buy {
+      margin-top: rem(40);
+      width: 100%;
+    }
+
+    &__user-links {
+      margin-right: 0;
+    }
+  }
+
+  // @media screen and (width < 996.01px) {}
+
+  @media screen and (width < 440.01px) {
+
+    &__user-favorite {
+      margin-right: rem(18);
+    }
+
+    &__user-comparsion {
+      margin-right: rem(18);
+    }
+  }
+
 }
 
 
 .rate {
   display: inline-block;
+
+  @media screen and (width < 440.01px) {
+    & svg {
+      width: rem(23);
+      height: rem(23);
+    }
+
+
+  }
 }

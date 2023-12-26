@@ -20,6 +20,10 @@
 .hero__slider .slick-dots {
   bottom: rem(60);
   gap: rem(9);
+
+  @media screen and (width < 440.01px) {
+    bottom: rem(28);
+  }
 }
 
 

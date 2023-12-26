@@ -3,7 +3,7 @@
   &__tabs {
     margin-bottom: rem(25);
 
-    &-item {
+    &-link {
       display: inline-block;
     }
 
@@ -27,14 +27,6 @@
   }
 
   &__content {
-
-    // .tabs__content {
-    //   display: none;
-    // }
-
-    // .tabs__content--active.tabs__content {
-    //   display: block;
-    // }
 
     &-form {
       display: flex;
@@ -101,7 +93,5 @@
       background-color: transparent;
 
     }
-
-
   }
 }

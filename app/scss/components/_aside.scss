@@ -378,9 +378,17 @@
   height: rem(8);
   top: 50%;
   transform: translateY(-50%);
-  @include adaptivevalue(left, 0, 28, 1200, 320, 1);
-  // left: rem(28);
+  // @include adaptivevalue(left, 0, 28, 1200, 320, 1);
+
   cursor: pointer;
+}
+
+.catalog__view .jq-selectbox__trigger-arrow {
+  left: rem(0);
+}
+
+.aside__form-options .jq-selectbox__trigger-arrow {
+  @include adaptivevalue(left, 0, 28, 1200, 320, 1);
 }
 
 .jq-selectbox li {

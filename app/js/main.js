@@ -13,6 +13,10 @@ if ($(window).width() < 980) {
   $(".header__top-menu-list").appendTo($(".menu-mobile__wrapper"));
 }
 
+if ($(window).width() < 1055) {
+  $(".card-product__btn-buy").appendTo($(".card-product__box"));
+}
+
 $(function () {
   $(".hero__slider").slick({
     dots: true,
@@ -37,17 +41,17 @@ $(function () {
 $(".tabs__link").on("click", function (e) {
   e.preventDefault();
 
-  // $($(this).siblings()).removeClass("tabs__link--active");
-  $($(this).parent().siblings().find(".tabs__link")).removeClass(
-    "tabs__link--active"
-  );
+  $($(this).siblings()).removeClass("tabs__link--active");
 
-  $($(this).parents().siblings().find(".tabs__content")).removeClass(
+  $($(this).closest(".tabs-wrapper").siblings().find("li")).removeClass(
     "tabs__content--active"
   );
 
   $(this).addClass("tabs__link--active");
   $($(this).attr("href")).addClass("tabs__content--active");
+
+  // Инициализация слайдера
+  $(".products__slider").slick("setPosition");
 });
 
 // Иконка фаворит становиться залитой

@@ -127,9 +127,9 @@ button,
 }
 
 @media screen and (width < 720.01px) {
-    .tabs-wrapper {
-        overflow-x: scroll;
-    }
+    // .tabs-wrapper {
+    //     overflow-x: scroll;
+    // }
 
     .mobile-overflow {
         width: rem(1000);

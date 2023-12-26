@@ -85,6 +85,10 @@
     }
   }
 
+  &__top-title {
+    pointer-events: none;
+  }
+
 
   @media screen and (width < 980.01px) {
     &__top {
@@ -132,6 +136,8 @@
       color: #7F7F7F;
       letter-spacing: rem(-0.086);
       position: relative;
+      pointer-events: none;
+      pointer-events: all;
 
       &::after {
         position: absolute;

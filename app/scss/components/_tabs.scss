@@ -1,8 +1,18 @@
 .tabs {
-  // display: flex;
-  // align-items: center;
   display: inline-block;
   margin-right: rem(50);
+
+  &__overflow {
+    overflow-x: scroll;
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item.tabs__content--active {
+    display: block;
+  }
 
   &__link {
     position: relative;
@@ -25,10 +35,8 @@
   }
 }
 
-.tabs__content {
-  display: none;
-}
 
-.tabs__content--active.tabs__content {
+
+.search__content-item.tabs__content--active {
   display: block;
 }
