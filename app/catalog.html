@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ru">
 
 <head>
@@ -38,7 +38,7 @@
           </ul>
         </nav>
         <a class="header__logo" href="index.html">
-          <img class="header__logo__img" src="./images/logo.svg" alt="icon logo">
+          <img class="header__logo-img" src="./images/logo.svg" alt="icon logo">
         </a>
         <div class="header__actions">
           <a class="header__location" href="https://maps.app.goo.gl/QiY53m9x3tJSQiaD9" target="_blank"
@@ -221,10 +221,10 @@
             </ul>
           </div>
           <div class="catalog__view">
-            <select class="filter-style select-item">
-              <option>По полулярности</option>
-              <option>От дешевых к дорогим</option>
-              <option>3</option>
+            <select class="filter-style select-item" name="view">
+              <option value="">По полулярности</option>
+              <option value="">От дешевых к дорогим</option>
+              <option value="">3</option>
             </select>
             <button class="catalog__view-btngrid catalog__view-button" title="Плитка">
               <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21" fill="none">
@@ -257,67 +257,66 @@
             </div>
             <ul class="tabs__content aside__container">
               <li class="tabs__content-item  tabs__content--active aside__content-item" id="aside-tab1">
-                <form class="aside__form">
+
+
+
+
+
+                <form class="aside__form" id="asideForm" name="asideForm">
                   <ul class="aside__form-list">
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="products-inStock">
                       <p class="aside__form-title title-form">Наличие</p>
                       <div class="aside__form-content">
                         <div class="aside__form-content-box">
-
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="inStock" value="В наличие">
                             В наличие
                           </label>
                         </div>
                         <div class="aside__form-content-box">
-
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="toOrder" value="Под заказ">
                             Под заказ
                           </label>
                         </div>
                       </div>
                     </li>
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="new-products">
                       <p class="aside__form-title title-form">Новинки</p>
                       <div class="aside__form-content aside__form-content--radio">
                         <div class="aside__form-content-box">
-
                           <label class="aside__form-content-label">
-                            <input class="filter-style" name="radio" type="radio">
+                            <input class="filter-style" name="radio" type="radio" value="Все" required>
                             Все
                           </label>
                         </div>
                         <div class="aside__form-content-box">
-
                           <label class="aside__form-content-label">
-                            <input class="filter-style" name="radio" type="radio">
+                            <input class="filter-style" name="radio" type="radio" value="Новинки">
                             Новинки
                           </label>
                         </div>
-
                         <div class="aside__form-content-box">
-
                           <label class="aside__form-content-label">
-                            <input class="filter-style" name="radio" type="radio">
+                            <input class="filter-style" name="radio" type="radio" value="Акции">
                             Акции
                           </label>
                         </div>
                       </div>
                     </li>
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="products-price">
                       <p class="aside__form-title title-form">Цена</p>
                       <div class="aside__form-content">
                         <input type="text" class="js-range-slider" name="my_range" value="" data-min="100000"
                           data-max="500000" data-from="150000" data-to="275000">
                       </div>
                     </li>
-                    <li class="aside__form-item-list">
+                    <li class="aside__form-item-list" role="group" aria-labelledby="products-power">
                       <ul class="aside__form-options">
                         <li class="aside__form-options-item">
                           <p class="aside__form-title title-list">Мощность, л.с.</p>
-                          <select class="filter-style aside__form-select">
-                            <option>90</option>
+                          <select class="filter-style aside__form-select" name="power" required>
+                            <option selected>90</option>
                             <option>130</option>
                             <option>154</option>
                             <option>230</option>
@@ -326,149 +325,158 @@
                         </li>
                         <li class="aside__form-options-item">
                           <p class="aside__form-title title-list">Мощность двигателя, л.с.</p>
-                          <select class="filter-style aside__form-select">
-                            <option>90</option>
-                            <option>130</option>
-                            <option>154</option>
-                            <option>230</option>
-                            <option>300</option>
+                          <select class="filter-style aside__form-select" name="enginePower" required>
+                            <option value="90">90</option>
+                            <option value="130">130</option>
+                            <option value="154">154</option>
+                            <option value="230">230</option>
+                            <option value="300">300</option>
                           </select>
                         </li>
                         <li class="aside__form-options-item">
                           <p class="aside__form-title title-list">Макс. скорость</p>
-                          <select class="filter-style aside__form-select">
-                            <option>90</option>
-                            <option>130</option>
-                            <option>154</option>
-                            <option>230</option>
-                            <option>300</option>
+                          <select class="filter-style aside__form-select" name="maxSpeed">
+                            <option value="90">90</option>
+                            <option value="130">130</option>
+                            <option value="154">154</option>
+                            <option value="230">230</option>
+                            <option value="300">300</option>
                           </select>
                         </li>
 
                       </ul>
                     </li>
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="products-brand">
                       <p class="aside__form-title title-form">Бренд</p>
                       <div class="aside__form-content">
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="brandBrp" value="BRP" checked>
                             BRP
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="brandSpark2" value="Spark 2" checked>
                             Spark 2
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="brandSpark3" value="Spark 3">
                             Spark 3
                           </label>
                         </div>
                         <div class="aside__form-filter-more">
-                          <button class="aside__form-filter-more-btn">Показать еще</button>
+                          <button class="aside__form-filter-more-btn" name="showMore" type="button">
+                            <span class="visually-hidden">Показать еще</span>
+                            Показать еще
+                          </button>
                         </div>
                       </div>
                     </li>
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="products-brand">
                       <p class="aside__form-title title-form">Модель</p>
                       <div class="aside__form-content">
                         <input class="aside__form-search" type="text" placeholder="Введите модель">
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="model1" value="Sea-doo Spark 2" checked>
                             Sea-doo Spark 2
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="model2" value="SeaDoo Spark 90" checked>
                             SeaDoo Spark 90
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="model3" value="SeaDoo GTI 155">
                             SeaDoo GTI 155
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="model4" value="SeaDoo GTR 230">
                             SeaDoo GTR 230
                           </label>
                         </div>
                         <div class="aside__form-filter-more">
-                          <button class="aside__form-filter-more-btn">Показать еще</button>
+                          <button class="aside__form-filter-more-btn" name="showMore" type="button">
+                            <span class="visually-hidden">Показать еще</span>Показать
+                            еще</button>
                         </div>
                       </div>
                     </li>
-                    <li class="aside__form-item-drop aside__form-item-drop-btnchecked">
+                    <li class="aside__form-item-drop aside__form-item-drop-btnchecked" role="group"
+                      aria-labelledby="products-stock">
                       <p class="aside__form-title title-form">Акции</p>
                       <div class="aside__form-content">
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="stock" value="SALE" checked>
                             <span class="aside__form-item-drop-btnchecked-text">SALE</span>
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="new" value="NEW" checked>
                             <span class="aside__form-item-drop-btnchecked-text">NEW</span>
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="hit" value="HIT">
                             <span class="aside__form-item-drop-btnchecked-text">HIT</span>
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="dealer" value="">
                             <span class="aside__form-item-drop-btnchecked-text">ДИЛЕР</span>
                           </label>
                         </div>
                       </div>
                     </li>
-                    <li class="aside__form-item-drop">
+                    <li class="aside__form-item-drop" role="group" aria-labelledby="products-countries">
                       <p class="aside__form-title title-form">Страны</p>
                       <div class="aside__form-content">
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="china" value="Китай" checked>
                             Китай
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox" checked>
+                            <input class="filter-style" type="checkbox" name="germany" value="Германия" checked>
                             Германия
                           </label>
                         </div>
                         <div class="aside__form-content-box">
                           <label class="aside__form-content-label">
-                            <input class="filter-style" type="checkbox">
+                            <input class="filter-style" type="checkbox" name="usa" value="CША">
                             CША
                           </label>
                         </div>
                         <div class="aside__form-filter-more">
-                          <button class="aside__form-filter-more-btn">Показать еще</button>
+                          <button class="aside__form-filter-more-btn" name="showMore" type="button">
+                            <span class="visually-hidden">Показать еще</span>
+                            Показать еще
+                          </button>
                         </div>
                       </div>
                     </li>
                     <li class="aside__form-item-drop aside__form-item-btn">
-                      <button class="aside__form-filter-btn-send aside__form-filter-btn-send--active"
-                        type="submit">ВЫБРАТЬ</button>
+                      <button class="aside__form-filter-btn-send aside__form-filter-btn-send--active" type="submit"
+                        id="choose">ВЫБРАТЬ</button>
                       <p class="aside__form-filter-btn-extra">Дополнительные параметры</p>
                       <div class="aside__form-filter-btn-extra-content">more</div>
-                      <button class="aside__form-filter-btn-reset" type="submit">Сбросить фильтр</button>
+                      <button class="aside__form-filter-btn-reset" type="reset" id="resetFilter">Сбросить
+                        фильтр</button>
                     </li>
-
                   </ul>
                 </form>
               </li>
@@ -1504,6 +1512,7 @@
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/ion.rangeSlider.min.js"></script>
   <script src="js/jquery.rateyo.min.js"></script>
+  <script src="js/aside-form.js" type="module"></script>
   <script src="js/main.js"></script>
 </body>
 
